@@ -1,3 +1,4 @@
+
 (function() {
     var header = new Headroom(document.querySelector("#header"), {
         tolerance: 5,
@@ -10,6 +11,7 @@
     });
     header.init();
 
+/*
     var bttHeadroom = new Headroom(document.getElementById("btt"), {
         tolerance : 0,
         offset : 500,
@@ -19,5 +21,7 @@
             unpinned : "slide--down"
         }
     });
-    bttHeadroom.init();
+    //bttHeadroom.init();
+*/    
 }());
+

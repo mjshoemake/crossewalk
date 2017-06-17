@@ -45,6 +45,12 @@
 	font-family: "Andika";
 	src: url("../fonts/Andika-R.ttf");
 }
+@font-face
+{
+	font-family: "Helvetica Neue";
+	src: url("../fonts/helvetica-neue-59441d9427e07.ttf");
+}
+
 
 .feature {
 }
@@ -73,36 +79,15 @@ div.feature-title {
 
 a{text-decoration:none;border-bottom: none;-webkit-transition:border-color .2s linear;-moz-transition:border-color .2s linear;-o-transition:border-color .2s linear;transition:border-color .2s linear;color:#292f36}
 
-.feature-title__title {
-	margin-top: 5px;
-	margin-bottom: 8px;
-	color: #d6d8f3;
-//	text-shadow: 1px 1px 1px white;
-	text-shadow: 2px 2px 0px #111111;
-}
-
 .header {
 	background-color: @color-primary-0;
 }
 
-.brand__forename {
-	font-family: Budidaya, Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	color: #d6d8f3;
-	font-size: 26px;
-	text-shadow: 2px 2px 0px #111111;
-}
-
-.brand__surname {
-	font-family: Budidaya, Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	color:#dddddd;
-	font-size: 18px;
-	text-shadow: 2px 2px 0px #111111;
-}
-
 img.app-icon {
-	vertical-align: middle;
+	//vertical-align: middle;
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
 
 /* MJS END Customizations */
@@ -125,12 +110,6 @@ audio:not([controls]) {
 
 [hidden] {
 	display:none
-}
-
-html {
-	font-family:sans-serif;
-	-webkit-text-size-adjust:100%;
-	-ms-text-size-adjust:100%
 }
 
 body {

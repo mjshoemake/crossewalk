@@ -8,36 +8,22 @@
 		<link href="css/layout.css" rel="stylesheet"/> 
 		-->
 		<link href="css/cssReset.css" rel="stylesheet"/>
-		<link href="css/theme2.css" rel="stylesheet"/> 
-		<link href="css/headroom.css" rel="stylesheet"/>
 		<link href="css/bootstrap.css" rel="stylesheet"/>
+		<link href="css/headroom.css" rel="stylesheet"/>
+		<link href="css/theme2.css" rel="stylesheet"/> 
 
+<!--
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script language="Javascript">
-		</script>  
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/back-to-top.js"></script>
+
+
 	</head>
 	<body>
 		<header id="header" class="header header--fixed hide-from-print" role="banner">
 			<div class="container-fluid" >
-
-<!--	
-				<nav id="nav" class="nav-wrapper" role="navigation">
-					<ul class="nav nav--main">
-						<li class="nav__item ">
-							<a class="header__link subdued" href="https://www.github.com/WickyNilliams/headroom.js">
-								<span aria-hidden="true" class="icon icon--github"></span>
-								<span class="complimentary push--left">Stores</span>
-							</a>
-						</li>
-						<li class="nav__item ">
-							<a class="header__link subdued" href="https://www.twitter.com/WickyNilliams">
-								<span aria-hidden="true" class="icon icon--twitter"></span>
-								<span class="complimentary push--left">Preferences</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
--->
 
 					<nav class="navbar navbar-default">
   						<div class="container-fluid">
@@ -49,25 +35,19 @@
         							<span class="icon-bar"></span>
         							<span class="icon-bar"></span>
       							</button>
-					<img class="app-icon" src="images/shopping-cart2.png" alt="Map My Shop" style="width:31px;height:25px;"/>
-					<b class="brand__forename">Map</b>
-					<b class="brand__surname">my</b>
-					<b class="brand__forename">Shop</b>
+								<img class="app-icon hide-on-mobile" src="images/crossewalk3.png" alt="Crossewalk" style="width:32px;height:28px; vertical-align: middle;"/>
+								<b class="brand__forename">Crossewalk</b>&nbsp;
+								<b class="brand__surname hide-on-mobile">Software</b>
     						</div>
 
    							<!-- Collect the nav links, forms, and other content for toggling -->
     						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<form class="navbar-form navbar-right">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Search">
-									</div>
-									<button type="submit" class="btn btn-default">Go!</button>
-								</form>
 								<ul class="nav navbar-nav navbar-right">
-									<li class="nav"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
-									<li class="nav"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Stores</a></li>
-									<li class="nav"><a href="#"><span class="glyphicon glyphicon-search"></span>&nbsp;Search</a></li>
-									<li class="nav"><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;Preferences</a></li>
+									<li class="nav"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li>
+									<li class="nav"><a href="#"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Resume</a></li>
+									<li class="nav"><a href="#"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Downloads</a></li>
+									<li class="nav"><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;References</a></li>
+									<li class="nav"><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Contact</a></li>
 								</ul>
 							</div><!-- /.navbar-collapse -->
 						</div><!-- /.container-fluid -->
@@ -76,137 +56,428 @@
 		</header>
 
 		<article>
-		<header class="feature">
-			<div class="container container-fluid feature-title">
-				<h2 class="feature-title__title headroom-title">My Stores</h2>
-				<p class="feature-title__subtitle">This is your list of stores.  You can add a store by clicking the plus sign.  To select a store, click the store image.</p>
+			<header class="feature">
+				<div class="container container-fluid feature-title">
+					<h2 class="feature-title__title headroom-title">Resume</h2>
+					<p class="feature-title__subtitle">I am a leader and mentor who is skilled in building high performing software development teams. I cast a clear vision for the team, focusing on efficiency, teamwork, collaboration, and growing technical knowledge. I am also a developer who has built quality web applications for over 20 years.</p>
+				</div>
+			</header>
+
+			<div class="container-fluid">
+				<div class="panel panel-primary section center width-450">  
+					<div class="panel-body">
+						<div class="left">
+							<img class="box-center-mobile" src="images/profile-picture.jpg" alt="" alt-text="">
+						</div>	
+						<div class="right">
+<!--
+							<p style="font-size: 130%;">
+								<b>Mike Shoemake, CSM</b><br/>
+								770-508-0802 <br/>
+								atlantatechie@gmail.com<br/>
+								Cumming, GA<br/>
+								<a href="https://www.linkedin.com/in/mike-shoemake-csm-14904963/" target="_new"><img src="images/LinkedIn.png" alt="" alt-text="" style="width:36px; height: 35px;"></a>
+							</p>
+-->
+							<p class="big-font text-center-mobile">
+								<b>Mike Shoemake, CSM</b><br/>
+								770-508-0802 <br/>
+								atlantatechie@gmail.com<br/>
+								Cumming, GA<br/>
+								<a href="https://www.linkedin.com/in/mike-shoemake-csm-14904963/" target="_new"><img src="images/LinkedIn.png" alt="" alt-text="" style="width:36px; height: 35px;"></a>
+							</p>
+						</div>
+					</div>
+				</div>					
+				
+				<div class="panel panel-primary section width-fill">
+					<div class="panel-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+							Technical Skills
+						</a>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<div class="left">
+								<ul style="margin-bottom: 0;">
+									<li>Java, Spring, Hibernate</li>
+									<li>Groovy, Grails</li>
+									<li>Dropwizard (microservices)</li>
+									<li>Maven, Ant, Jenkins, Git, Jira</li>
+									<li>Oracle, SQL Server, Postgres, MySql</li>
+								</ul>
+							</div>
+							<div class="right">
+								<ul>
+									<li>AngularJS v1.4 & v2, Javascript, CSS3, HTML5</li>
+									<li>JUnit, Spock, Cucumber, Geb</li>
+									<li>JSON, XML, REST</li>
+									<li>Spring MVC, Struts, JSP, JSTL</li>
+									<li>Bootstrap</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>	
+								
+				<div class="panel panel-primary section width-fill">
+					<div class="panel-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+							Professional Experience
+						</a>
+					</div>
+					<div id="collapse2" class="panel-collapse collapse in">
+						<div class="panel-body">
+
+							<!-- Job -->
+							<div class="panel panel-primary subsection" style="width: fill;">
+								<div class="panel-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2a">
+										<b>BRIDGE2 SOLUTIONS,</b> &nbsp;Alpharetta, GA&nbsp;&nbsp;&nbsp;<b>2015 - 2017</b><br/>
+									</a>
+									<div class="hide-on-mobile"><i>Bridge2 Solutions provides marketing and fulfillment solutions to financial 
+									institutions, loyalty programs and Fortune 500 companies, creating a next
+									generation shopping experience for rewards customers.</i></div>
+								</div>
+								<div id="collapse2a" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="indent1">
+											<p>
+												<b>Software Development Manager</b><br/>
+												Managed 25-30 developers and testers across three scrum teams who develop
+												software for Citibank.
+											</p>	
+											<p>
+												<ul>
+													<li>
+														Was given a team that previously had considerable difficulty in past 
+														releases (missed dates, underestimated work, and serious quality issues).
+													</li>
+													<li>
+														After 6 months, my team had successfully delivered 3 quality releases 
+														on time and on budget.
+													</li>
+													<li>
+														Drove the team to focus on quality, causing the average defect rate 
+														during stabilization phase to drop from 15-25 per day when I started to
+														3-5 per day today.
+													</li>
+													<li>
+														Managed the successful migration from Struts 1/JDK 7/Tomcat 6/Hibernate 3/Subversion 
+														to Spring MVC 4/JDK 8/Tomcat 8/Hibernate 5/Git.
+													</li>
+													<li>
+														Led the team to start migration toward an Angular JS single page application.
+													</li>
+													<li>
+														Implemented Scrum agile methodology (standup, retrospective, backlog grooming, 
+														spring planning, sprint demo, story points, etc.).
+													</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>	
+
+							<!-- Job -->
+							<div class="panel panel-primary subsection" style="width: fill;">
+								<div class="panel-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2b">
+										<b>AMPLIFY,</b> &nbsp;Alpharetta, GA&nbsp;&nbsp;&nbsp;<b>2012 - 2015</b><br/>
+									</a>
+									<div class="hide-on-mobile"><i>Amplify creates digital K-12 educational products to empower teachers, students and parents.</i></div>
+								</div>
+								<div id="collapse2b" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="indent1">
+											<p>
+												<b>Software Development Manager,</b> 2014 - 2015<br/>
+												Led a high profile scrum team of 10 people in the creation of a digital curriculum 
+												delivery system to be used in K-12 classrooms. Was responsible for delivering the actual 
+												student-facing lessons and activities.
+											</p>	
+											<p>
+												<ul>
+													<li>
+														Delivered all quarterly releases on time with excellent quality.
+													</li>
+													<li>
+														Increased our average team velocity (points per person day) from 0.71 to 
+														consistently over 1.00 in 6 months with the highest being 1.11.
+													</li>
+													<li>
+														Interviewed and hired developers who became key contributors to the team.
+													</li>
+													<li>
+														Motivated the team over several weeks of triaging a complex vendor integration 
+														that had stopped working due to bugs in AngularJS and iOS 8.
+													</li>
+												</ul>
+											</p>
+											<p>
+												<b>Senior Software Developer,</b> 2012 - 2014<br/>
+												Built and delivered an epub editor to support various customizations needed for the 
+												classroom environment, including sentence/line/paragraph numbering, in-book quizzes, 
+												and “reveal” words.
+											</p>	
+											<p>
+												<ul>
+													<li>
+														Wrote a set of Java classes to parse HTML files and process them to accurately 
+														detect and mark the end of sentences in epub HTML files.
+													</li>
+													<li>
+														Designed a process for importing, editing, packaging, and publishing epubs to 
+														Amplify’s ereader application.
+													</li>
+													<li>
+														Updated a single threaded publishing pipeline to add a threadpool to concurrently 
+														process numerous books at once (also identified and resolved several bottlenecks).
+													</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>	
+
+							<!-- Job -->
+							<div class="panel panel-primary subsection" style="width: fill;">
+								<div class="panel-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2c">
+										<b>CISCO SYSTEMS,</b> &nbsp;Lawrenceville, GA&nbsp;&nbsp;&nbsp;<b>2008 - 2012</b><br/>
+									</a>
+									<div class="hide-on-mobile"><i>Cisco, a worldwide leader in IT, provides network infrastructure (ex. switches and routers) as well as other services such as conferencing and customer collaboration.</i></div>
+								</div>
+								<div id="collapse2c" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="indent1">
+											<p>
+												<b>Development Team Lead</b><br/>
+												Led a scrum team of nine offshore resources in the development of provisioning and administrative services for FemtoCell devices.
+											</p>	
+											<p>
+												<ul>
+													<li>
+														Released the product every 6-8 weeks on time with quality.
+													</li>
+													<li>
+														Performed training for offshore team to cover Java best 
+														practices and design patterns.
+													</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>	
+
+							<!-- Job -->
+							<div class="panel panel-primary subsection" style="width: fill;">
+								<div class="panel-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2d">
+										<b>RECORDANT,</b> &nbsp;Alpharetta, GA&nbsp;&nbsp;&nbsp;<b>2006 - 2008</b><br/>
+									</a>
+									<div class="hide-on-mobile"><i>Recordant develops an audio-capture technology enabling companies to improve customer service by analyzing conversations between clients (ex. car sales, army recruiters, etc.).</i></div>
+								</div>
+								<div id="collapse2d" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="indent1">
+											<p>
+												<b>Senior Software Developer</b><br/>
+												Designed and developed features for the flagship application as well as the internal customer management tool.
+											</p>	
+											<p>
+												<ul>
+													<li>
+														Created a full-featured dashboard (drill down, slice and dice, etc.) using Corda CenterView.
+													</li>
+													<li>
+														Wrote all SQL Server stored procedures used for data access.
+													</li>
+													<li>
+														Designed and documented the multi-dimensional database (ie. data warehouse) to be used for reporting and the dashboard.
+													</li>
+													<li>
+														Performed data analysis for customers to show ROI.
+													</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>	
+							
+							<!-- Job -->
+							<div class="panel panel-primary subsection" style="width: fill;">
+								<div class="panel-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2e">
+										<b>INOVIS,</b> &nbsp;Alpharetta, GA&nbsp;&nbsp;&nbsp;<b>2005 - 2006</b><br/>
+									</a>
+									<div class="hide-on-mobile"><i>Inovis is a leading provider of B2B software and managed services that help companies speed transaction flows, synchronize product information and improve supply chain processes.</i></div>
+								</div>
+								<div id="collapse2e" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="indent1">
+											<p>
+												<b>Senior Software Developer</b><br/>
+												Designed and implemented features for the B2B web application used to manage EDI traffic.
+											</p>	
+											<p>
+												<ul>
+													<li>
+														Implemented several features with minimal defects found.
+													</li>
+													<li>
+														Led the effort to define and implement the new defect tracking process for Quality Center.
+													</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>	
+							
+							<!-- Job -->
+							<div class="panel panel-primary subsection" style="width: fill;">
+								<div class="panel-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2f">
+										<b>BELLSOUTH via Accenture,</b> &nbsp;Atlanta, GA&nbsp;&nbsp;&nbsp;<b>2004 - 2005</b><br/>
+									</a>
+									<div class="hide-on-mobile"><i>BellSouth Telecommunications, LLC is an operating company of AT&T that serves the southeastern United States. It consists of the former operations of Southern Bell and South Central Bell.</i></div>
+								</div>
+								<div id="collapse2f" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="indent1">
+											<p>
+												<b>Senior Application Architect (Contractor)</b><br/>
+												Led a team of three offshore developers in the development of a Struts intranet application used to reconcile account balances and verify journal entry batches for accuracy.
+											</p>	
+											<p>
+												<ul>
+													<li>
+														Created UI design, database design, and detailed design specification for the offshore team to follow.
+													</li>
+													<li>
+														Successfully delivered a product that met specifications and provided the functionality requested by the business.
+													</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>	
+							
+							<!-- Job -->
+							<div class="panel panel-primary subsection" style="width: fill;">
+								<div class="panel-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2g">
+										<b>WITNESS SYSTEMS,</b> &nbsp;Alpharetta, GA&nbsp;&nbsp;&nbsp;<b>1999 - 2004</b><br/>
+									</a>
+									<div class="hide-on-mobile"><i>Witness Systems is a leading provider of products that allow supervisors to capture and listen to conversations between employees and customers.</i></div>
+								</div>
+								<div id="collapse2g" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="indent1">
+											<p>
+												<b>Software Development Manager,</b> 2003 - 2004<br/>
+												Managed 4 development teams of 3-5 developers each that developed web applications.
+											</p>	
+											<p>
+												<ul>
+													<li>
+														Consistently improved the release management process and product quality with each release.
+													</li>
+													<li>
+														Led the defect tracking core team which defined and maintained the Corporate defect tracking process.
+													</li>
+												</ul>
+											</p>
+											<p>
+												<b>Team Lead,</b> 2000 - 2003<br/>
+												Led a team of 3 developers that improved and enhanced a java-based form generation/agent evaluation tool.
+											</p>	
+											<p>
+												<ul>
+													<li>
+														Stabilized a brittle application and began consistently releasing the product with improved quality in each release.
+													</li>
+													<li>
+														Hired a senior software developer who excelled and ultimately took over the leadership role when I was promoted to manager.
+													</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>	
+							
+						</div>
+					</div>
+				</div>	
+								
+				<div class="panel panel-primary section width-fill" style="margin-bottom: 70px;">
+					<div class="panel-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+							Education / Training
+						</a>
+					</div>
+					<div id="collapse3" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<p class="text-center">
+							<b>Bachelor of Science, Applied Computer Science, 1995</b><br/>
+							University of Southern Mississippi, Hattiesburg, MS
+							</p>
+						</div>
+
+						<div class="panel panel-primary subsection" style="width: fill;">
+							<div class="panel-heading">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3a">
+									<b>Courses and Certifications</b>
+								</a>
+							</div>
+							<div id="collapse3a" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<p class="text-center">
+										Software Project Survival (Construx, 2001)<br/>
+										Software Project Estimation (Construx, 2001)<br/>
+										Scrum Master Certification (Dec. 2012)<br/>
+									</p>
+								</div>
+							</div>
+						</div>	
+							
+						<div class="panel panel-primary subsection" style="width: fill;">
+							<div class="panel-heading">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3a">
+									<b>Meetups and Conferences</b>
+								</a>
+							</div>
+							<div id="collapse3a" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<p class="text-center">
+										AJUG (since 2008)<br/>
+										AngularJS Meetup, Alpharetta GA (2015)<br/>
+										DevNexus, Atlanta GA (2011, 2012, 2015)<br/>
+									</p>
+								</div>
+							</div>
+						</div>	
+
+					</div>
+				</div>	
+								
 			</div>
-		</header>
 
-		<div class="container block main" role="main">
-
-		<h2>Downloads</h2>
-		<div class="downloads" style="margin-bottom:1em">
-			<div class="grid">
-				<div class="grid__item one-half"><a class="btn btn--secondary btn--full" href="https://raw.github.com/WickyNilliams/headroom.js/master/dist/headroom.js">Development <span class="complimentary subdued">(3.7kB)</span></a></div>
-				<div class="grid__item one-half"><a class="btn btn--secondary btn--full" href="https://raw.github.com/WickyNilliams/headroom.js/master/dist/headroom.min.js">Production <span class="complimentary subdued">(1.7kB)</span></a></div>
-			</div>
-		</div>
-
-		<h2>What's it all about?</h2>
-
-		<p>Headroom.js is a lightweight, high-performance JS widget (with no dependencies!) that allows you to react to the user's scroll. The header on this site is a living example, it slides out of view when scrolling down and slides back in when scrolling up.</p>
-
-		<h3>Why use it?</h3>
-
-		<p>Fixed headers are a popular approach for keeping the primary navigation in close proximity to the user. This can reduce the effort required for a user to quickly navigate a site, but they are not without problems&hellip; </p>
-
-		<p>Large screens are usually landscape-oriented, meaning less vertical than horizontal space. A fixed header can therefore occupy a significant portion of the content area. Small screens are typically used in a portrait orientation. Whilst this results in more vertical space, because of the overall height of the screen a meaningfully-sized header can still be quite imposing.</p>
-
-		<p>Headroom.js allows you to bring elements into view when appropriate, and give focus to your content the rest of the time.</p>
-
-		<h3>How does it work?</h3>
-
-		<p>At it's most basic headroom.js simply adds and removes CSS classes from an element in response to a scroll event:</p>
-
-		<pre class="language-markup"><code>&lt;!-- initially --&gt;
-		&lt;header class="headroom"&gt;
-
-		&lt;!-- scrolling down --&gt;
-		&lt;header class="headroom headroom--unpinned"&gt;
-
-		&lt;!-- scrolling up --&gt;
-		&lt;header class="headroom headroom--pinned"&gt;
-		</code></pre>
-
-		<p>Relying on CSS classes affords headroom.js incredible flexibility. The choice of what to do when scrolling up or down is now entirely yours - anything you can do with CSS you can do in response to the user's scroll.</p>
-
-		<h2>Usage</h2>
-
-		<p>Using headroom.js is really simple. It has a pure JS API, and an optional jQuery/Zepto-compatible plugin.</p>
-
-		<h3>With pure JS</h3>
-
-		<pre class="language-javascript"><code>// grab an element
-		var myElement = document.querySelector("header");
-		// construct an instance of Headroom, passing the element
-		var headroom  = new Headroom(myElement);
-		// initialise
-		headroom.init(); 
-		</code></pre>
-
-		<h3>With jQuery/Zepto</h3>
-
-		<pre class="language-javascript"><code>// simple as this!
-		// NOTE: init() is implicitly called with the plugin
-		$("# header").headroom();
-		</code></pre>
-
-		<p>The plugin also offers a data-* API if you prefer a declarative approach.</p>
-
-		<pre class="language-markup"><code>&lt;!-- selects $(&quot;[data-headroom]&quot;) --&gt;
-		&lt;header data-headroom&gt;
-		</code></pre>
-
-		<p>Note: Zepto's additional <a href="https://github.com/madrobby/zepto#zepto-modules" title="https://github.com/madrobby/zepto#zepto-modules">data module</a> is required for compatibility.</p>
-
-		<h3>Options</h3>
-
-		<p>Headroom.js can also accept an options object to alter the way it behaves. You can see the default options by inspecting <code>Headroom.options</code>. The structure of an options object is as follows:</p>
-
-		<pre class="language-javascript"><code>{
-			// vertical offset in px before element is first unpinned
-			offset : 0,
-			// scroll tolerance in px before state changes
-			tolerance : 0,
-			// css classes to apply
-			classes : {
-				// when element is initialised
-				initial : "headroom",
-				// when scrolling up
-				pinned : "headroom--pinned",
-				// when scrolling down
-				unpinned : "headroom--unpinned"
-			}
-		}
-		</code></pre>
-
-			<h2>Examples</h2>
-			<p>
-				Head over to the <a href="http://wicky.nillia.ms/headroom.js/playroom/">headroom.js playroom</a> if you want see some example usages. There you can tweak all of headroom's options and apply different CSS effects in an interactive demo.
-			</p>
-
-			<h2>License</h2>
-			<p>
-				Licensed under the <a href="https://www.opensource.org/licenses/mit-license.php">MIT License</a>.
-			</p>
-
-		  <div class="sharing">
-			<h2>Share this on:</h2>
-			<div class="grid">
-			  <div class="grid__item one-third">
-				<a class="sharing__button btn btn--secondary btn--full" href="https://facebook.com/sharer.php?u=http://wicky.nillia.ms/headroom.js/">Facebook</a>
-			  </div>
-			  <div class="grid__item one-third">
-				<a class="sharing__button btn btn--secondary btn--full" href="https://twitter.com/intent/tweet?url=http://wicky.nillia.ms/headroom.js/&amp;text=Headroom.js. Give your pages some headroom&amp;via=WickyNilliams">Twitter</a>
-			  </div>
-			  <div class="grid__item one-third">
-				<a class ="sharing__button btn btn--secondary btn--full" href="https://plus.google.com/share?url=http://wicky.nillia.ms/headroom.js/">Google+</a>
-			  </div>
-			</div>
-		  </div>
-
-
-			</div>
-			<a class="btt btn btn--plain hide-from-print" href="#" id="btt">Top <i class="icon icon--up"></i></a>
+			<a id="back-to-top" class="btt btn btn--plain hide-from-print top-btn" href="#" id="btt">Back To Top <i class="icon icon--up"></i></a>
 		</article>
 
 		<script src="https://rawgithub.com/WickyNilliams/headroom.js/gh-pages/assets/scripts/main.js"></script>
-		<script src="js/slidingHeader.js"></script>
 
 		<!-- Bootstrap -->
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="js/bootstrap.js"></script>
+		<script src="js/slidingHeader.js"></script>
 
 	</body>
 </html>
