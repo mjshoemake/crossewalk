@@ -122,6 +122,11 @@ body {
 	width: 175px;
 }
 
+.thumbnail-center-mobile {
+	width: 127px;
+	height: 105px;
+}
+
 .brand__forename {
 	font-family: Budidaya, Helvetica, Arial, sans-serif;
 	font-weight: bold;
@@ -307,6 +312,15 @@ div.panel-heading .accordion-toggle.collapsed:after {
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
 
+.flex-row-nowrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
 
 div.left {
 	display: inline-block;
@@ -315,6 +329,22 @@ div.left {
 
 div.right {
 	display: inline-block;
+}
+
+.dis-block {
+	display: block;
+}
+
+.dis-inline {
+	display: inline;
+}
+
+.dis-inline-block {
+	display: inline-block;
+}
+
+.right-margin-20px {
+	margin-right: 20px;
 }
 
 // Spans, paragraphs, breaks, etc.
@@ -464,6 +494,11 @@ a.top-btn:hover, a.top-btn:focus {
 		display: block;
 	}
 	
+	.thumbnail-center-mobile {
+		margin: 0 auto;
+		display: block;
+	}
+	
 	.text-center-mobile {
 		text-align: center;
 	}
@@ -562,6 +597,10 @@ a.top-btn:hover, a.top-btn:focus {
 	/* rules that only apply for canvases narrower than 250px */
 	
 	.box-center-mobile {
+		width: 100%;
+	}
+	
+	.thumbnail-center-mobile {
 		width: 100%;
 	}
 	
