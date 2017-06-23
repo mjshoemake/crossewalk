@@ -230,8 +230,15 @@ nav.navbar-default ul.navbar-nav>li.active>a:focus {
 	text-shadow: 1px 1px 1px #000;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: transparent;
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle {
+	//background-color: transparent;
+	background-color: #dddddd;
+}
+
+nav.navbar-default button.navbar-toggle span.icon-bar {
+	background-color: #aaaaaa;
+	box-shadow: 0px 1px 1px #888888;
 }
 
 li.nav {
@@ -253,7 +260,8 @@ div.panel.section {
 	background: #f4f4f4;
 }
 
-div.panel.subsection {
+div.panel.subsection,
+div.panel.res-employer {
 	border: none;
 	border-radius: 0px;
 	background: white;
@@ -276,25 +284,35 @@ div.panel.section > div.panel-heading {
 div.panel.subsection > div.panel-heading {
 	background-color: @panel-inner-header-bg-color;
 	font-weight: normal;
+	font-size: 14px;
+	text-shadow: 0px 0px 0px #111111;
+}
+
+div.panel.res-employer > div.panel-heading {
+	background-color: @panel-inner-header-bg-color;
+	font-weight: normal;
 	font-size: small;
 	text-shadow: 0px 0px 0px #111111;
 }
 
-div.panel > div.panel-heading > a {
-	color: @panel-header-font-color;
-}
-
-div.panel.subsection > div.panel-heading > div {
+div.panel.subsection > div.panel-heading > div,
+div.panel.res-employer > div.panel-heading > div {
 	margin-right: 40px;
 }
 
-div.panel.subsection > div.panel-heading > div > i {
+div.panel.subsection > div.panel-heading > div > i,
+div.panel.res-employer > div.panel-heading > div > i {
 	color: black;
 	font-style: italic;
 }
 
-div.panel.subsection > div.panel-heading > a {
+div.panel.subsection > div.panel-heading > a,
+div.panel.res-employer > div.panel-heading > a {
 	color: black;
+}
+
+div.panel > div.panel-heading > a {
+	color: @panel-header-font-color;
 }
 
 div.center {
@@ -304,6 +322,7 @@ div.center {
 
 div.panel-primary > div.panel-heading {
 	border-color: white;
+	color: black;
 }
 
 div.panel-primary > div.panel-heading + .panel-collapse .panel-body {
@@ -371,7 +390,7 @@ div.width-450 {
 	width: 450px;
 }
 
-p {
+b, strong {
 	font-family: Helvetica Neue Bold, Andika, Helvetica, sans-serif;
 }
 
@@ -629,6 +648,13 @@ a.top-btn:hover, a.top-btn:focus {
 		text-decoration: none;
 	}
 
+	div.panel.subsection > div.panel-heading {
+		font-size: 12px;
+	}
+
+	div.panel.res-employer > div.panel-heading {
+		font-size: 10px;
+	}
 }	
 
 @media only screen and (max-width: 360px) { 
