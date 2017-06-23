@@ -124,7 +124,7 @@ body {
 
 .thumbnail-center-mobile {
 	width: 127px;
-	height: 105px;
+//	height: 105px;
 }
 
 .brand__forename {
@@ -228,6 +228,10 @@ nav.navbar-default ul.navbar-nav>li.active>a:focus {
 	color: #ffffff;
 	//font-weight: bold;
 	text-shadow: 1px 1px 1px #000;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
 }
 
 li.nav {
@@ -367,6 +371,10 @@ div.width-450 {
 	width: 450px;
 }
 
+p {
+	font-family: Helvetica Neue Bold, Andika, Helvetica, sans-serif;
+}
+
 .big-font {
 	font-size: 130%;
 }	
@@ -475,6 +483,22 @@ a.top-btn:hover, a.top-btn:focus {
     background: linear-gradient(@article-bg-color, white); /* Standard syntax */
 }
 
+@media only screen and (max-width: 767px) { 
+	ul.nav.navbar-right {
+		width: 120px;
+		//margin: 0 20px 0 20px;
+	}
+	
+	div.navbar-collapse.in {
+		//background-color: @color-primary-2;
+		padding-bottom: 10px;
+	}
+	
+	li.nav {
+		padding: 5px 0 5px 0;
+	}
+}
+
 @media only screen and (max-width: 499px) { 
 	/* rules that only apply for canvases narrower than 500px */
 	
@@ -552,53 +576,69 @@ a.top-btn:hover, a.top-btn:focus {
 		margin-left: 0px;
 	}
 
+	.flex-row-nowrap {
+		display: block;
+	}
 	
+	.right-margin-20px {
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
 
-a.top-btn {
-	margin: 20px 10px 20px 10px;
-	border: none;
-	border-radius: 0px;
-    -moz-box-shadow: 0px 2px 3px #999999;
-    -webkit-box-shadow: 0px 2px 3px #999999;
-    box-shadow: 0px 2px 3px #999999;
-    
-    outline: 1px solid #ddd;
-	border-top: 1px solid #fff;
-	//padding: 10px;
-	background: @top-btn-bg-color;
-	color: @top-btn-font-color;
+	a.top-btn {
+		margin: 20px 10px 20px 10px;
+		border: none;
+		border-radius: 0px;
+		-moz-box-shadow: 0px 2px 3px #999999;
+		-webkit-box-shadow: 0px 2px 3px #999999;
+		box-shadow: 0px 2px 3px #999999;
+	
+		outline: 1px solid #ddd;
+		border-top: 1px solid #fff;
+		//padding: 10px;
+		background: @top-btn-bg-color;
+		color: @top-btn-font-color;
 
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	z-index: 100;
-	display: none;
-	text-decoration: none;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		z-index: 100;
+		display: none;
+		text-decoration: none;
 
-}
+	}
 
-a.top-btn:hover, a.top-btn:focus {
-	margin: 20px 10px 20px 10px;
-	border: none;
-	border-radius: 0px;
-    -moz-box-shadow: 0px 2px 3px #999999;
-    -webkit-box-shadow: 0px 2px 3px #999999;
-    box-shadow: 0px 2px 3px #999999;
-    
-    outline: 1px solid #ddd;
-	border-top: 1px solid #fff;
-	//padding: 10px;
-	background: @top-btn-bg-hover-color;
-	color: @top-btn-font-color;
+	a.top-btn:hover, a.top-btn:focus {
+		margin: 20px 10px 20px 10px;
+		border: none;
+		border-radius: 0px;
+		-moz-box-shadow: 0px 2px 3px #999999;
+		-webkit-box-shadow: 0px 2px 3px #999999;
+		box-shadow: 0px 2px 3px #999999;
+	
+		outline: 1px solid #ddd;
+		border-top: 1px solid #fff;
+		//padding: 10px;
+		background: @top-btn-bg-hover-color;
+		color: @top-btn-font-color;
 
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	z-index: 100;
-	text-decoration: none;
-}
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		z-index: 100;
+		text-decoration: none;
+	}
 
 }	
+
+@media only screen and (max-width: 360px) { 
+	/* rules that only apply for canvases narrower than 311px */
+	
+	.thumbnail-center-mobile {
+		width: 100%;
+	}
+	
+}
 
 @media only screen and (max-width: 249px) { 
 	/* rules that only apply for canvases narrower than 250px */
@@ -617,6 +657,12 @@ a.top-btn:hover, a.top-btn:focus {
 	
 	div.panel-body {
 		font-size: 80%;
+	}
+
+	.right-margin-20px {
+		margin-right: 20px;
+		margin-bottom: 20px;
+		width: 100%;
 	}
 
 }
