@@ -1,0 +1,26 @@
+{
+  "name": "Crossewalk",
+  "version": "1.0.0",
+  "description": "Crossewalk Software Website",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-include-source": "^1.1.0",
+    "jit-grunt": "~0.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjshoemake/crossewalk"
+  },
+  "author": "Mike Shoemake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjshoemake/crossewalk/issues"
+  },
+  "homepage": "https://github.com/mjshoemake/crossewalk"
+}
