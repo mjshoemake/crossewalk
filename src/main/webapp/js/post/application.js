@@ -76,3 +76,14 @@ function bootstrapAlert(type, message, timeout) {
         }, timeout);
     }
 }
+
+function showLongRef(refid){
+	document.getElementById("longRef" + refid).style.display = "block";
+	document.getElementById("shortRef" + refid).style.display = "none";
+}
+
+function showShortRef(refid){
+	document.getElementById("longRef" + refid).style.display = "none";
+	document.getElementById("shortRef" + refid).style.display = "block";
+}
+

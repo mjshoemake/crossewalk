@@ -1,67 +1,11 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset=”utf-8”>		 
-	    <title>Crossewalk Software</title>
-		<!-- Bootstrap -->
-		<!--
-		<link href="css/layout.css" rel="stylesheet"/> 
-		-->
-		<link href="css/cssReset.css" rel="stylesheet"/>
-		<link href="css/bootstrap.css" rel="stylesheet"/>
-		<link href="css/headroom.css" rel="stylesheet"/>
-		<link href="css/theme2.0.1.css" rel="stylesheet"/>
-		<link rel="icon" href="images/crossewalk3.ico"> 
-
-<!--
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
--->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="js/back-to-top.js"></script>
-
-
-	</head>
-	<body>
-		<header id="header" class="header header--fixed hide-from-print" role="banner">
-			<div class="container-fluid" >
-
-					<nav class="navbar navbar-default">
-  						<div class="container-fluid">
-    						<!-- Brand and toggle get grouped for better mobile display -->
-        					<div class="navbar-header">
-        						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        							<span class="sr-only">Toggle navigation</span>
-        							<span class="icon-bar"></span>
-        							<span class="icon-bar"></span>
-        							<span class="icon-bar"></span>
-      							</button>
-								<img class="app-icon" src="images/crossewalk3.png" alt="Crossewalk" style="width:32px;height:28px; vertical-align: middle;"/>
-								<b class="brand__forename">Crossewalk</b>&nbsp;
-								<b class="brand__surname hide-on-mobile">Software</b>
-    						</div>
-
-   							<!-- Collect the nav links, forms, and other content for toggling -->
-    						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="nav navbar-nav navbar-right">
-<!--									<li class="nav"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li> -->
-									<li class="nav"><a href="resume.html"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Resume</a></li>
-									<li class="nav"><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Articles</a></li>
-									<li class="nav"><a href="downloads.html"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Downloads</a></li>
-									<li class="nav"><a href="references.html"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;Referrals</a></li>
-<!--									<li class="nav"><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Contact</a></li>  -->
-								</ul>
-							</div><!-- /.navbar-collapse -->
-						</div><!-- /.container-fluid -->
-					</nav>
-			</div>
-		</header>
-
-		<article>
 			<header class="feature">
 				<div class="container container-fluid feature-title">
+					<h2 class="feature-title__title headroom-title">{{pageName}}</h2>
+					<p class="feature-title__subtitle">{{pageDescription}}</p>
+<!--
 					<h2 class="feature-title__title headroom-title">Articles</h2>
 					<p class="feature-title__subtitle">Articles written by Mike Shoemake</p>
+-->					
 				</div>
 			</header>
 
@@ -69,7 +13,7 @@
 				
 				<div class="panel panel-primary section width-fill" style="margin-bottom: 70px;">
 					<div class="panel-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+						<a class="accordion-toggle" target="_self" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
 							Articles
 						</a>
 					</div>
@@ -78,7 +22,7 @@
 							<!-- Article -->
 							<div class="panel panel-primary subsection" style="width: fill;">
 								<div class="panel-heading">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2a">
+									<a class="accordion-toggle" target="_self" data-toggle="collapse" data-parent="#accordion" href="#collapse2a">
 										How to Improve Software Organizations
 									</a>
 								</div>
@@ -86,7 +30,7 @@
 									<div class="panel-body flex-row-nowrap">
 										<div class="left right-margin-20px" style="width: 140px;">
 											<a class="thumbnail-center-mobile" href="https://toughnickel.com/business/Improving-Software-Organizations" target="_new">
-												<img class="thumbnail-center-mobile" src="images/thumbnails/improve-software-orgs.png" alt="" alt-text="">
+												<img class="thumbnail-center-mobile" src="assets/images/thumbnails/improve-software-orgs.png" alt="" alt-text="">
 											</a>
 										</div>	
 										<div class="right flex-grow">
@@ -117,7 +61,7 @@
 							<!-- Article -->
 							<div class="panel panel-primary subsection" style="width: fill;">
 								<div class="panel-heading">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2b">
+									<a class="accordion-toggle" target="_self" data-toggle="collapse" data-parent="#accordion" href="#collapse2b">
 										Making Accurate Software Project Estimates
 									</a>
 								</div>
@@ -125,7 +69,7 @@
 									<div class="panel-body flex-row-nowrap">
 										<div class="left right-margin-20px" style="width: 140px;">
 											<a href="https://toughnickel.com/business/Estimating-Software-Projects-Effectively" target="_new">
-												<img class="thumbnail-center-mobile" src="images/thumbnails/accurate-estimates.png" alt="" alt-text="">
+												<img class="thumbnail-center-mobile" src="assets/images/thumbnails/accurate-estimates.png" alt="" alt-text="">
 											</a>
 										</div>	
 										<div class="right flex-grow">
@@ -152,7 +96,7 @@
 							<!-- Article -->
 							<div class="panel panel-primary subsection" style="width: fill;">
 								<div class="panel-heading">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2c">
+									<a class="accordion-toggle" target="_self" data-toggle="collapse" data-parent="#accordion" href="#collapse2c">
 										Common Leadership Anti-Patterns
 									</a>
 								</div>
@@ -160,7 +104,7 @@
 									<div class="panel-body flex-row-nowrap">
 										<div class="left right-margin-20px" style="width: 140px;">
 											<a href="https://toughnickel.com/business/Common-Leadership-Anti-Patterns" target="_new">
-												<img class="thumbnail-center-mobile" src="images/thumbnails/leadership-antipatterns.png" alt="" alt-text="">
+												<img class="thumbnail-center-mobile" src="assets/images/thumbnails/leadership-antipatterns.png" alt="" alt-text="">
 											</a>
 										</div>	
 										<div class="right flex-grow">
@@ -189,15 +133,3 @@
 
 				</div>	
 			</div>
-
-			<a id="back-to-top" class="btt btn btn--plain hide-from-print top-btn" href="#" id="btt">Back To Top <i class="icon icon--up"></i></a>
-		</article>
-
-		<script src="https://rawgithub.com/WickyNilliams/headroom.js/gh-pages/assets/scripts/main.js"></script>
-
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.js"></script>
-		<script src="js/slidingHeader.js"></script>
-
-	</body>
-</html>

@@ -27,11 +27,15 @@
 		<!-- include: "type": "js", "files": "app/**/*.js" -->		
 <script src="app/app.module.js"></script>
 		<script src="app/app.service.js"></script>
-		<script src="app/components/downloads/downloads.01-module.js"></script>
-		<script src="app/components/downloads/downloads.02-controller.js"></script>
-		<script src="app/components/downloads/downloads.03-service.js"></script>
-		<script src="app/components/referrals/referrals.01-module.js"></script>
-		<script src="app/components/referrals/referrals.02-controller.js"></script>
+		<script src="app/components/articles/articles-module.js"></script>
+		<script src="app/components/articles/articles.controller.js"></script>
+		<script src="app/components/downloads/downloads-module.js"></script>
+		<script src="app/components/downloads/downloads.controller.js"></script>
+		<script src="app/components/downloads/downloads.service.js"></script>
+		<script src="app/components/referrals/referrals-module.js"></script>
+		<script src="app/components/referrals/referrals.controller.js"></script>
+		<script src="app/components/resume/resume-module.js"></script>
+		<script src="app/components/resume/resume.controller.js"></script>
 		<!-- /include -->
 		<!-- include: "type": "css", "files": "**/*.css" -->
 		<link href="assets/css/01-cssReset.css" rel="stylesheet" type="text/css">
@@ -69,8 +73,8 @@
     						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav navbar-right">
 <!--									<li class="nav"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li>  -->
-									<li class="nav"><a href="#"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Resume</a></li>
-									<li class="nav"><a href="articles.html"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Articles</a></li>
+									<li class="nav"><a ng-click="goto('/resume')"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Resume</a></li>
+									<li class="nav"><a ng-click="goto('/articles')"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Articles</a></li>
 									<li class="nav"><a ng-click="goto('/downloads')"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Downloads</a></li>
 									<li class="nav"><a ng-click="goto('/referrals')"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;Referrals</a></li>
 <!--									<li class="nav"><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Contact</a></li>  -->
