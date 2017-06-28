@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="main">
+	<head>
+
+
+        <!--		<meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+	</head>
 	<head>
 		<meta charset=”utf-8”>		 
 	    <title>Crossewalk Software</title>
 
-		<link rel="icon" href="assets/images/crossewalk3.ico"> 
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet"/>
+
+		<!-- Crossewalk -->
+		<link href="css/cssReset.css" rel="stylesheet"/>
+		<link href="css/headroom.css" rel="stylesheet"/>
+		<link href="css/theme2.0.1.css" rel="stylesheet"/> 
+		<link rel="icon" href="images/crossewalk3.ico"> 
 	
 		<!-- AngularJS -->
-        <script src="http://code.angularjs.org/1.2.6/angular.js"></script>
-        <script src="http://code.angularjs.org/1.2.6/angular-sanitize.js"></script>
-        <script src="http://code.angularjs.org/1.2.6/angular-resource.js"></script>
-        <script src="http://code.angularjs.org/1.2.6/angular-route.js"></script>
-<!--
         <script src="http://code.angularjs.org/1.2.6/angular.min.js"></script>
         <script src="http://code.angularjs.org/1.2.6/angular-sanitize.min.js"></script>
         <script src="http://code.angularjs.org/1.2.6/angular-resource.min.js"></script>
         <script src="http://code.angularjs.org/1.2.6/angular-route.min.js"></script>
-
+<!--
         <script src="js/angular-route.min.js"></script>
         <script src="js/angular.min.js"></script>
         <script src="js/angular-sanitize.min.js"></script>
         <script src="js/angular-resource.min.js"></script>
 -->
 
-
-		<!-- include: "type": "js", "files": "app/**/*.js" -->		
-<script src="app/app.module.js"></script>
-		<script src="app/app.service.js"></script>
-		<script src="app/components/downloads/downloads.01-module.js"></script>
-		<script src="app/components/downloads/downloads.02-controller.js"></script>
-		<script src="app/components/downloads/downloads.03-service.js"></script>
-		<script src="app/components/referrals/referrals.01-module.js"></script>
-		<script src="app/components/referrals/referrals.02-controller.js"></script>
-		<!-- /include -->
-		<!-- include: "type": "css", "files": "**/*.css" -->
-		<link href="assets/css/01-cssReset.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/02-bootstrap.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/03-headroom.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/theme2.0.1.css" rel="stylesheet" type="text/css">
-		<!-- /include -->
-		<!-- include: "type": "js", "files": "js/pre/**/*.js" -->
-		<script src="js/pre/01-jquery-3.2.1.min.js"></script>
-		<script src="js/pre/02-back-to-top.js"></script>
-		<!-- /include -->
+		<!-- Crossewalk Angular Depencies -->
+        <script src="js/application.js"></script>
+        <script src="js/app-main.js"></script>
+<!--
+        <script src="js/app-login.js"></script>
+        <script src="js/app-cookbooks.js"></script>
+        <script src="js/app-food-categories.js"></script>
+        <script src="js/app-meals.js"></script>
+        <script src="js/app-recipes.js"></script>
+        <script src="js/app-users.js"></script>
+-->
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/back-to-top.js"></script>
 	</head>
 	<body class="{{bodyClass}}" ng-controller="AppController">
 		<header id="header" class="header header--fixed hide-from-print" role="banner">
@@ -60,7 +60,7 @@
         							<span class="icon-bar"></span>
         							<span class="icon-bar"></span>
       							</button>
-								<img class="app-icon" src="assets/images/crossewalk3.png" alt="Crossewalk" style="width:32px;height:28px; vertical-align: middle;"/>
+								<img class="app-icon" src="images/crossewalk3.png" alt="Crossewalk" style="width:32px;height:28px; vertical-align: middle;"/>
 								<b class="brand__forename">Crossewalk</b>&nbsp;
 								<b class="brand__surname hide-on-mobile">Software</b>
     						</div>
@@ -71,8 +71,8 @@
 <!--									<li class="nav"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li>  -->
 									<li class="nav"><a href="#"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Resume</a></li>
 									<li class="nav"><a href="articles.html"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Articles</a></li>
-									<li class="nav"><a ng-click="goto('/downloads')"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Downloads</a></li>
-									<li class="nav"><a ng-click="goto('/referrals')"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;Referrals</a></li>
+									<li class="nav"><a href="downloads.html"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Downloads</a></li>
+									<li class="nav"><a href="references.html"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;Referrals</a></li>
 <!--									<li class="nav"><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Contact</a></li>  -->
 								</ul>
 							</div><!-- /.navbar-collapse -->
@@ -84,7 +84,7 @@
 		<article>
 
     		<!-- MAIN CONTENT AND INJECTED VIEWS -->
-            <div id="contentArea" class="container-fluid contentArea">
+            <div id="contentArea" class="container scrollable contentArea">
                 <p/>
                 <div id="alertHome"></div>
 
@@ -97,14 +97,10 @@
 			<a id="back-to-top" class="btt btn btn--plain hide-from-print top-btn" href="#" id="btt">Back To Top <i class="icon icon--up"></i></a>
 		</article>
 
-		<!-- <script src="https://rawgithub.com/WickyNilliams/headroom.js/gh-pages/assets/scripts/main.js"></script>  -->
+		<script src="https://rawgithub.com/WickyNilliams/headroom.js/gh-pages/assets/scripts/main.js"></script>
 
-		<!-- include: "type": "js", "files": "js/post/**/*.js" -->
-		<script src="js/post/application.js"></script>
-		<script src="js/post/bootstrap.js"></script>
-		<script src="js/post/headroom.min.js"></script>
-		<script src="js/post/http-auth-interceptor.js"></script>
-		<script src="js/post/slidingHeader.js"></script>
-		<!-- /include -->
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/slidingHeader.js"></script>
 	</body>
 </html>

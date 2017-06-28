@@ -11,8 +11,8 @@ module.exports = function(grunt) {
         },
         files: {
           // destination file and source file       
-          "src/main/webapp/assets/css/theme2.css": "less/theme2.less", 
-          "src/main/webapp/assets/css/headroom.css": "less/headroom.less" 
+          "src/main/webapp/assets/css/theme2.0.1.css": "less/theme2.less", 
+          "src/main/webapp/assets/css/03-headroom.css": "less/headroom.less" 
         }
       }
     },

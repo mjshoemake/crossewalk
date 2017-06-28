@@ -1,76 +1,3 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset=”utf-8”>		 
-	    <title>Crossewalk Software</title>
-		<!-- Bootstrap -->
-		<!--
-		<link href="css/layout.css" rel="stylesheet"/> 
-		-->
-		<link href="css/cssReset.css" rel="stylesheet"/>
-		<link href="css/bootstrap.css" rel="stylesheet"/>
-		<link href="css/headroom.css" rel="stylesheet"/>
-		<link href="css/theme2.0.1.css" rel="stylesheet"/> 
-		<link rel="icon" href="images/crossewalk3.ico"> 
-
-<!--
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
--->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="js/back-to-top.js"></script>
-
-		<script type= "text/javascript">
-
-			function showLongRef(refid){
-				document.getElementById("longRef" + refid).style.display = "block";
-				document.getElementById("shortRef" + refid).style.display = "none";
-			}
-
-			function showShortRef(refid){
-				document.getElementById("longRef" + refid).style.display = "none";
-				document.getElementById("shortRef" + refid).style.display = "block";
-			}
-
-		</script>
-	</head>
-	<body>
-		<header id="header" class="header header--fixed hide-from-print" role="banner">
-			<div class="container-fluid" >
-
-					<nav class="navbar navbar-default">
-  						<div class="container-fluid">
-    						<!-- Brand and toggle get grouped for better mobile display -->
-        					<div class="navbar-header">
-        						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        							<span class="sr-only">Toggle navigation</span>
-        							<span class="icon-bar"></span>
-        							<span class="icon-bar"></span>
-        							<span class="icon-bar"></span>
-      							</button>
-								<img class="app-icon" src="images/crossewalk3.png" alt="Crossewalk" style="width:32px;height:28px; vertical-align: middle;"/>
-								<b class="brand__forename">Crossewalk</b>&nbsp;
-								<b class="brand__surname hide-on-mobile">Software</b>
-    						</div>
-
-   							<!-- Collect the nav links, forms, and other content for toggling -->
-    						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="nav navbar-nav navbar-right">
-<!--									<li class="nav"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li> -->
-									<li class="nav"><a href="resume.html"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Resume</a></li>
-									<li class="nav"><a href="articles.html"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Articles</a></li>
-									<li class="nav"><a href="downloads.html"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;Downloads</a></li>
-									<li class="nav"><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;Referrals</a></li>
-<!--									<li class="nav"><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Contact</a></li> -->
-								</ul>
-							</div><!-- /.navbar-collapse -->
-						</div><!-- /.container-fluid -->
-					</nav>
-					
-			</div>
-		</header>
-
-		<article>
 			<header class="feature">
 				<div class="container container-fluid feature-title">
 					<h2 class="feature-title__title headroom-title">Referrals</h2>
@@ -82,21 +9,21 @@
 				
 				<div class="panel panel-primary section width-fill">
 					<div class="panel-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+						<a class="accordion-toggle" data-toggle="collapse" target="_self" data-parent="#accordion" href="#collapse-ref1">
 							Former Managers
 						</a>
 					</div>
-					<div id="collapse1" class="panel-collapse collapse in">
+					<div id="collapse-ref1" class="panel-collapse collapse in">
 						<div class="panel-body">
 							<div class="panel-group" id="accordion">
 
 								<div class="panel panel-default subsection">
 									<div class="panel-heading">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapse1a">
+										<a data-toggle="collapse" target="_self" data-parent="#accordion" href="#collapse-ref1a">
 											<b>Chip Owen</b> - Mike's Director of Development at Amplify
 										</a>
 									</div>
-									<div id="collapse1a" class="panel-collapse collapse in">
+									<div id="collapse-ref1a" class="panel-collapse collapse in">
 										<div class="panel-body">
 											<div id="shortRef1" style="display: block;">
 												<b>Excerpts:</b><br/>
@@ -138,11 +65,11 @@
 
 								<div class="panel panel-default subsection">
 									<div class="panel-heading">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapse1b">
+										<a data-toggle="collapse" target="_self" data-parent="#accordion" href="#collapse-ref1b">
 											<b>Neil Sambol</b> - Mike's Director of Development at Amplify
 										</a>
 									</div>
-									<div id="collapse1b" class="panel-collapse collapse">
+									<div id="collapse-ref1b" class="panel-collapse collapse">
 										<div class="panel-body">
 											<div id="shortRef2" style="display: block;">
 												<b>Excerpts:</b><br/>
@@ -174,11 +101,11 @@
 								
 								<div class="panel panel-default subsection">
 									<div class="panel-heading">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapse1c">
+										<a data-toggle="collapse" target="_self" data-parent="#accordion" href="#collapse-ref1c">
 											<b>Joe Davidson</b> - Mike's Development Manager at Amplify
 										</a>
 									</div>
-									<div id="collapse1c" class="panel-collapse collapse">
+									<div id="collapse-ref1c" class="panel-collapse collapse">
 										<div class="panel-body">
 											<div id="shortRef3" style="display: block;">
 											<b>Excerpts:</b><br/>
@@ -214,17 +141,17 @@
 
 				<div class="panel panel-primary section width-fill">
 					<div class="panel-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+						<a class="accordion-toggle" data-toggle="collapse" target="_self" data-parent="#accordion" href="#collapse-ref2">
 							Former Employees
 						</a>
 					</div>
-					<div id="collapse2" class="panel-collapse collapse in">
+					<div id="collapse-ref2" class="panel-collapse collapse in">
 						<div class="panel-body">
 							<div class="panel-group" id="accordion2">
 
 								<div class="panel panel-default subsection">
 									<div class="panel-heading">
-										<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2a">
+										<a data-toggle="collapse" target="_self" data-parent="#accordion2" href="#collapse2a">
 											<b>Darren Nelsen</b> - Web UI Developer on Mike's Team at Amplify
 										</a>
 									</div>
@@ -255,11 +182,11 @@
 
 								<div class="panel panel-default subsection">
 									<div class="panel-heading">
-										<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2b">
+										<a data-toggle="collapse" target="_self" data-parent="#accordion2" href="#collapse-ref2b">
 											<b>Keith Eisla</b> - Web UI Developer on Mike's Team at Amplify
 										</a>
 									</div>
-									<div id="collapse2b" class="panel-collapse collapse">
+									<div id="collapse-ref2b" class="panel-collapse collapse">
 										<div class="panel-body">
 											<div id="shortRef5" style="display: block;">
 												<b>Excerpts:</b><br/>
@@ -284,11 +211,11 @@
 								
 								<div class="panel panel-default subsection">
 									<div class="panel-heading">
-										<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2c">
+										<a data-toggle="collapse" target="_self" data-parent="#accordion2" href="#collapse-ref2c">
 											<b>Brad Wiederholt</b> - Web UI Developer on Mike's Team at Amplify
 										</a>
 									</div>
-									<div id="collapse2c" class="panel-collapse collapse">
+									<div id="collapse-ref2c" class="panel-collapse collapse">
 										<div class="panel-body">
 											<div id="shortRef6" style="display: block;">
 												<b>Excerpt:</b><br/>
@@ -315,18 +242,3 @@
 						</div>
 					</div>
 				</div>
-
-			</div>
-
-			<a id="back-to-top" class="btt btn btn--plain hide-from-print top-btn" href="#" id="btt">Back To Top <i class="icon icon--up"></i></a>
-		</article>
-
-		<script src="https://rawgithub.com/WickyNilliams/headroom.js/gh-pages/assets/scripts/main.js"></script>
-
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.js"></script>
-		<script src="js/slidingHeader.js"></script>
-
-	</body>
-</html>
-

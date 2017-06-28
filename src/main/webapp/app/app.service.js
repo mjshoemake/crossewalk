@@ -1,16 +1,5 @@
-var main = angular.module('main', ['cookbooks', 'foodCategories', 'meals', 'login', 'recipes', 'users', 'ngRoute', 'ngSanitize']);
- 
 // Main Service
-main.service('mainService', function() {
-    var statusBarText = 'Welcome to the Shoemake Home Management application.';
-	this.setStatusBarText = function(text) {
-	    statusBarText = text;
-		document.getElementById("footer").innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + text;	
-	}
-
-	this.getStatusBarText = function() {
-	    return statusBarText;
-	}
+angular.module('app').service('appService', function() {
 
     // Example: bootstrapAlert('info', '<message>')
     // Example: bootstrapAlert('error', '<message>')
@@ -42,12 +31,11 @@ main.service('mainService', function() {
 });
 
 // Main App Controllers
-main.controller('AppController', function ($scope, $rootScope, $route, $location, mainService, loginService) {
+angular.module('app').controller('AppController', function ($scope, $rootScope, $route, $location, appService) {
 	$scope.$route = $route;
-    $rootScope.statusBarText = mainService.getStatusBarText();
     $rootScope.headerDisplay = "display: blocked;";
-    $rootScope.bodyClass = "login";
-    $rootScope.lastPage = '/adminCookbooks';
+    //$rootScope.bodyClass = "login";
+    $rootScope.lastPage = '/downloads';
 
     $scope.showLogin = function() {
         $rootScope.headerDisplay = "display: none;";
@@ -59,9 +47,9 @@ main.controller('AppController', function ($scope, $rootScope, $route, $location
     $scope.logout = function () {
         loginService.logout();
         $scope.showLogin();
-        mainService.setStatusBarText("You were logged out successfully.");
-        mainService.hideAlert();
-        mainService.mainAlert("success", "You were logged out successfully.  Login again to continue working.");
+        appService.setStatusBarText("You were logged out successfully.");
+        appService.hideAlert();
+        appService.mainAlert("success", "You were logged out successfully.  Login again to continue working.");
     };
 
     $scope.setup = function () {
@@ -70,25 +58,29 @@ main.controller('AppController', function ($scope, $rootScope, $route, $location
     };
 
     $rootScope.goto = function (path) {
-        mainService.hideAlert();
+        appService.hideAlert();
         $rootScope.lastPage = path;
-        if (loginService.sessionExpired()) {
-            mainService.bootstrapAlert('info', 'Your session has timed out. Please login again.');
-            $scope.showLogin();
-        } else {
-            $rootScope.headerDisplay = "display: blocked;";
-            $rootScope.bodyClass = "main";
+        
+        // Close the hamburger menu when changing pages.
+        $("#bs-example-navbar-collapse-1").attr('class', 'navbar-collapse collapse');
+        
+        //if (loginService.sessionExpired()) {
+        //    appService.bootstrapAlert('info', 'Your session has timed out. Please login again.');
+        //    $scope.showLogin();
+        //} else {
+        //    $rootScope.headerDisplay = "display: blocked;";
+        //    $rootScope.bodyClass = "main";
             $location.path(path);
-        }
+        //}
 	};
 
     $rootScope.gotoLast = function() {
-        $rootScope.headerDisplay = "display: blocked;";
-        $rootScope.bodyClass = "main";
+        //$rootScope.headerDisplay = "display: blocked;";
+        //$rootScope.bodyClass = "main";
         //$('#alertHome').alert('close');
         $location.path($rootScope.lastPage);
     };
 
-    $scope.setup();
+    //$scope.setup();
 
 });
