@@ -6,26 +6,15 @@
 				</div>
 			</header>
 
-			<div class="container-fluid">				
-				<div class="panel panel-primary section width-fill">
-					<div class="panel-heading">
-						<a class="accordion-toggle" data-toggle="collapse" target="_self" data-parent="#accordion" href="#collapse-docs1">
-							Downloads
+			<div class="container-fluid">
+				<titled-panel title="Downloads">
+					<div ng-repeat="item in downloadsList" class="dis-inline-block right-margin-20px">
+						<a href="{{item.docUrl}}" target="_new">
+							<div>
+								<img class="dis-block thumbnail-center-mobile" ng-src="{{item.imageUrl}}" alt="{{item.name}}" alt-text="{{item.name}}">
+								<span class="dis-block text-center">{{item.name}}</span>
+							</div>
 						</a>
 					</div>
-					<div id="collapse-docs1" class="panel-collapse collapse in">
-						<div class="panel-body">
-
-							<div ng-repeat="item in downloadsList" class="dis-inline-block right-margin-20px">
-								<a href="{{item.docUrl}}" target="_new">
-									<div>
-										<img class="dis-block thumbnail-center-mobile" ng-src="{{item.imageUrl}}" alt="{{item.name}}" alt-text="{{item.name}}">
-										<span class="dis-block text-center">{{item.name}}</span>
-									</div>
-								</a>
-							</div>
-
-						</div>
-					</div>
-				</div>									
+				</titled-panel>
 			</div>

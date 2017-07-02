@@ -24,18 +24,32 @@
 -->
 
 
-		<!-- include: "type": "js", "files": "app/**/*.js" -->		
-<script src="app/app.module.js"></script>
+		<script src="app/app.module.js"></script>
 		<script src="app/app.service.js"></script>
-		<script src="app/components/articles/articles-module.js"></script>
-		<script src="app/components/articles/articles.controller.js"></script>
-		<script src="app/components/downloads/downloads-module.js"></script>
-		<script src="app/components/downloads/downloads.controller.js"></script>
-		<script src="app/components/downloads/downloads.service.js"></script>
+		<!-- include: "type": "js", "files": "app/shared/**/*module.js" -->		
+<script src="app/shared/directives/shared-directives-module.js"></script>
+		<!-- /include -->
+		<!-- include: "type": "js", "files": "app/shared/**/*directive.js" -->		
+<script src="app/shared/directives/collapsible-panel.directive.js"></script>
+		<script src="app/shared/directives/titled-panel.directive.js"></script>
+		<!-- /include -->
+		<!-- include: "type": "js", "files": "app/components/**/*module.js" -->		
+<script src="app/components/articles/articles-module.js"></script>
+		<script src="app/components/downloads/downloads.module.js"></script>
 		<script src="app/components/referrals/referrals-module.js"></script>
-		<script src="app/components/referrals/referrals.controller.js"></script>
 		<script src="app/components/resume/resume-module.js"></script>
+		<!-- /include -->
+		<!-- include: "type": "js", "files": "app/components/**/*controller.js" -->		
+<script src="app/components/articles/articles.controller.js"></script>
+		<script src="app/components/downloads/downloads.controller.js"></script>
+		<script src="app/components/referrals/referrals.controller.js"></script>
 		<script src="app/components/resume/resume.controller.js"></script>
+		<!-- /include -->
+		<!-- include: "type": "js", "files": "app/components/**/*service.js" -->		
+<script src="app/components/downloads/downloads.service.js"></script>
+		<!-- /include -->
+		<!-- include: "type": "js", "files": "app/components/**/*directive.js" -->		
+
 		<!-- /include -->
 		<!-- include: "type": "css", "files": "**/*.css" -->
 		<link href="assets/css/01-cssReset.css" rel="stylesheet" type="text/css">

@@ -1,4 +1,4 @@
-angular.module('app.downloads', ['ngRoute', 'ngSanitize', 'ngResource']);
+angular.module('app.downloads', ['ngRoute', 'ngSanitize', 'ngResource', 'app.shared-directives']);
 
 var downloadsUrlPrefix = 'app/components/downloads/';
 

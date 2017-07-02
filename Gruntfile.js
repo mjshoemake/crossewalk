@@ -19,7 +19,17 @@ module.exports = function(grunt) {
     watch: {
       includeSource: {
         // Watch for added and deleted scripts to update index.html
-        files: ['src/main/webapp/app/**/*.js','src/main/webapp/assets/**/*.css'],
+        files: ['src/main/webapp/app/**/app.module.js',
+                'src/main/webapp/app/**/app.service.js',
+                'src/main/webapp/app/shared/**/*module.js',
+                'src/main/webapp/app/shared/**/*directive.js',
+                'src/main/webapp/app/component/**/*module.js',
+                'src/main/webapp/app/component/**/*service.js',
+                'src/main/webapp/app/component/**/*controller.js',
+                'src/main/webapp/app/component/**/*directive.js',
+                'src/main/webapp/assets/**/*.css',
+                
+        ],
         tasks: ['includeSource'],
         options: {
           event: ['added', 'deleted']
