@@ -2,7 +2,9 @@ angular.module('app.shared-directives').directive("collapsibleSubPanel", functio
     return {
         restrict: 'E',
         link: function(scope, element, attrs, ctrl, $transclude) {
-            scope.title = attrs.title;
+            scope.pretitle = attrs.pretitle;
+            scope.boldtitle = attrs.boldtitle;
+            scope.posttitle = attrs.posttitle;
             scope.id = attrs.id;
             scope.class = attrs.class;
             scope.panelstyle = attrs.panelstyle;
@@ -13,7 +15,7 @@ angular.module('app.shared-directives').directive("collapsibleSubPanel", functio
             '				<div class="panel panel-default subsection" style="{{panelstyle}}">' +
             '					<div class="panel-heading">' +
             '						<a data-toggle="collapse" target="_self" data-parent="#accordion" href="#collapse-{{id}}">' +
-            '							{{title}}' +
+            '							{{pretitle}}<b>{{boldtitle}}</b>{{posttitle}}' +
             '						</a>' +
             '					</div>' +
             '					<div id="collapse-{{id}}" class="panel-collapse {{class}}">' +
