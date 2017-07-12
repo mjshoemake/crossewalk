@@ -1,0 +1,36 @@
+<header class="container header">	
+	<nav class="navbar navbar-default">
+		<ng-content select="div.app-header"></ng-content>
+	</nav>
+</header>	
+<article class="y-auto x-hidden container contentArea article-bg">
+	<div class="container-fluid">
+		<!-- Page Title -->
+		<h3 class="page-header section">{{pageName}}</h3>
+
+		<!-- Breadcrumbs -->
+		<ol class="breadcrumb section">
+			<li><a href="#">User List</a></li>
+			<li><a href="#">View User</a></li>
+			<li class="active">Edit User</li>
+		</ol>
+
+		<div *ngIf="alertMsg" class="alert {{alertType}} alert-dismissable section">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			{{alertMsg}}
+		</div>		
+				
+		<!-- Jumbotron Example -->
+		<div *ngIf="showHint" class="jumbotron section">
+			<h4 class="jumbotron">Hints</h4>
+			<p class="jumbotron">This part of the page is used to communicate helpful hints to the user while on this page.  The user should have the ability to turn off this hint using the "Don't Show This Anymore" button.</p>
+			<a href="#" class="btn btn-large btn-success">Don't Show This Anymore</a>
+		</div>
+
+		<!-- Dynamic Content -->
+		<ng-content select="div.page-body"></ng-content>
+	</div>
+</article>
+<footer class="container footer"> 
+    <ng-content select="div.page-footer"></ng-content>
+</footer>            		
