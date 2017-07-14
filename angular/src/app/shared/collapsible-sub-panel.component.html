@@ -1,0 +1,15 @@
+<div class="panel panel-default subsection">
+  <div class="panel-heading">
+<!--
+    <a data-toggle="collapse" target="_self" attr.data-parent="{{dataParent}}" href="#collapse-{{id}}">
+-->
+    <a data-toggle="collapse" target="_self" (click)="onClick()">
+      {{pretitle}}<b>{{boldtitle}}</b>{{posttitle}}
+    </a>
+  </div>
+  <div id="collapse-{{id}}" class="panel-collapse {{collapseClass}}">
+    <div class="panel-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/franchise-list',
+    redirectTo: '/referral-list',
     pathMatch: 'full'
   }
 ];

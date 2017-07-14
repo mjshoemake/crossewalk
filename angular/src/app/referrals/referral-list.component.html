@@ -1,0 +1,55 @@
+<!-- 2 groups: "Former Managers" and "Former Employees" -->
+<collapsiblePanel *ngFor="let group of referrals; let i = index"
+                  title="{{group.caption}}"
+                  id="ref{{i+1}}"
+                  collapseClass="collapse in">
+  <!-- Accordion panel group -->
+  <div class="panel-group" id="accordion{{i+1}}">
+
+    <!-- Collapsible Subpanel for each referral -->
+    <collapsibleSubPanel *ngFor="let next of group.referrals; let j = index"
+                         boldtitle="{{next.author}}"
+                         posttitle="&nbsp;-&nbsp;{{next.description}}"
+                         id="ref{{i+1}}{{j+1}}"
+                         collapseClass="{{next.collapseClass}}"
+                         (click)="showReferralByAuthor($event)"
+                         dataParent="accordion{{i+1}}">
+
+      <div *ngIf="next.showExcerpts">
+        <b>Excerpts:</b><br/>
+        <p>"I have known and worked with Mike for nearly fifteen years. I have worked with Mike
+          at three different companies. I hired Mike at two of these companies and I would hire
+          Mike again."<br/> ... <br/>"Overall, Mike is hardworking, pays attention to detail, is reliable,
+          friendly, well regarded by his teammates and peers, cares about his teammates and learns and
+          applies new technologies quickly. Mike would make a fantastic addition to any development team."</p>
+        <a href="javascript:void(0)" (click)="showFull(next)">[SHOW MORE]</a>
+      </div>
+      <div *ngIf="! next.showExcerpts">
+        <p>"I have known and worked with Mike for nearly fifteen years. I have worked with Mike at
+          three different companies. I hired Mike at two of these companies and I would hire Mike again.</p>
+
+        <p>At Mike's latest job, Amplify, I hired Mike as a developer to work on a portion of a product
+          that was implemented in a technology stack that was new to Mike. Mike quickly learned the new
+          technology stack and product requirements and was contributing to the implementation of this
+          product in a very short period of time.</p>
+
+        <p>Later at Amplify, I asked Mike to step into a development manager role that had recently become
+          available. Mike stepped into this role under difficult circumstances: different technology stack,
+          different business requirements, new development team, compressed schedule. Mike quickly stepped
+          into the role, mastered the new technology stack and requirements and gained the confidence and
+          respect of the development team. Mike led the team through a number of successful sprints delivering
+          on time with quality.</p>
+
+        <p>Mike is a passionate practitioner of the Agile methodology. He has a great deal of experience
+          applying Agile principles but can be quite flexible and pragmatic in the application of Agile
+          methodologies.</p>
+
+        <p>Overall, Mike is hardworking, pays attention to detail, is reliable, friendly, well regarded by his
+          teammates and peers, cares about his teammates and learns and applies new technologies quickly.
+          Mike would make a fantastic addition to any development team."</p>
+        <a href="javascript:void(0)"  (click)="showExcerpts(next)">[SHOW LESS]</a>
+      </div>
+
+    </collapsibleSubPanel>
+  </div>
+</collapsiblePanel>

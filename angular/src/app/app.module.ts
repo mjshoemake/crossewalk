@@ -3,8 +3,8 @@ import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
-import { FranchiseModule } from './franchise/franchise.module';
-import { PreferencesModule } from './preferences/preferences.module';
+import { ReferralsModule } from './referrals/referrals.module';
+import { SharedModule } from './shared/shared.module';
 import {Logger, Options as LoggerOptions} from 'angular2-logger/app/core/logger';
 import { environment } from '../environments/environment';
 
@@ -15,6 +15,7 @@ import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { PageComponent } from './page.component';
 import { LogService } from './log.service';
+import { NavItemService } from './nav-item.service';
 import { routing } from './app.routes';
 
 // Decorator
@@ -24,19 +25,19 @@ import { routing } from './app.routes';
     FormsModule,
     HttpModule,
     JsonpModule,
-    FranchiseModule,
-    PreferencesModule,
+    ReferralsModule,
+    SharedModule,
     routing
   ],
   declarations: [
-	// Root declarations only
+  	// Root declarations only
   	AppComponent,
   	MainComponent,
   	HeaderComponent,
   	FooterComponent,
   	PageComponent
   ],
-  providers: [Logger, LogService],
+  providers: [Logger, LogService, NavItemService],
   bootstrap: [AppComponent]
 })
 

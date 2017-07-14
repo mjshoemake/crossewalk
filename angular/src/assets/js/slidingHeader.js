@@ -1,6 +1,9 @@
 
 (function() {
-    var header = new Headroom(document.querySelector("#header"), {
+document.addEventListener("DOMContentLoaded", function(event) {
+	var elem = document.querySelector("#header");
+	console.log(elem);
+    var header = new Headroom(elem, {
         tolerance: 5,
         offset : 205,
         classes: {
@@ -10,8 +13,12 @@
         }
     });
     header.init();
+});
+}());
 
 /*
+(function() {
+
     var bttHeadroom = new Headroom(document.getElementById("btt"), {
         tolerance : 0,
         offset : 500,
@@ -22,6 +29,6 @@
         }
     });
     //bttHeadroom.init();
-*/    
 }());
+*/
 
