@@ -17,6 +17,7 @@ import { PageComponent } from './page.component';
 import { LogService } from './log.service';
 import { NavItemService } from './nav-item.service';
 import { routing } from './app.routes';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Decorator
 @NgModule({
@@ -27,7 +28,8 @@ import { routing } from './app.routes';
     JsonpModule,
     ReferralsModule,
     SharedModule,
-    routing
+    routing,
+    NgbModule.forRoot()
   ],
   declarations: [
   	// Root declarations only

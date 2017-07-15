@@ -10,7 +10,7 @@ import { CollapsibleSubPanelComponent } from './collapsible-sub-panel.component'
   imports: [ CommonModule ],
   declarations: [
   	CollapsiblePanelComponent,
-  	CollapsibleSubPanelComponent
+  	CollapsibleSubPanelComponent,
   ],
   exports: [
   	CollapsiblePanelComponent,

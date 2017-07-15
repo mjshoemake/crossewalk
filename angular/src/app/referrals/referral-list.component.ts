@@ -7,7 +7,7 @@ import { ReferralGroup } from './referral-group';
 import { ReferralsService } from './referrals.service';
 import { PageComponent } from '../page.component';
 import { CollapsiblePanelComponent } from '../shared/collapsible-panel.component';
-import { CollapsibleSubPanelComponent } from '../shared/collapsible-sub-panel.component';
+//import { CollapsibleSubPanelComponent } from '../shared/collapsible-sub-panel.component';
 
 @Component({
 	selector: 'referralList',
@@ -32,6 +32,11 @@ export class ReferralListComponent  {
 		_pageComp.pageName = 'Referrals';
 		_pageComp.subTitle = 'Referrals for Mike Shoemake written by former colleagues.';
 		this.referrals = this.referralsService.getAll();
+		this.log.info('ReferralListComponent.constructor() Referral group count: ' + this.referrals.length);
+    for (var group of this.referrals) {
+      this.log.info('ReferralListComponent.constructor()   - ' + group.caption);
+    }
+
 	}
 
 	showExcerpts(referral: Referral) {
