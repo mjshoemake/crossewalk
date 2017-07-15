@@ -281,18 +281,16 @@ div.panel.section > div.panel-heading {
 	text-shadow: 1px 1px 0px #111111;
 }
 
-div.panel.subsection > div.panel-heading {
+.subsection > div.card > div.card-header {
 	background-color: @panel-inner-header-bg-color;
+	border: none;
 	font-weight: normal;
 	font-size: 14px;
 	text-shadow: 0px 0px 0px #111111;
 }
 
-div.panel.res-employer > div.panel-heading {
-	background-color: @panel-inner-header-bg-color;
-	font-weight: normal;
-	font-size: small;
-	text-shadow: 0px 0px 0px #111111;
+.subsection > div.card > div.card-header > a {
+	color: black;
 }
 
 div.panel.subsection > div.panel-heading > div,
@@ -304,11 +302,6 @@ div.panel.subsection > div.panel-heading > div > i,
 div.panel.res-employer > div.panel-heading > div > i {
 	color: black;
 	font-style: italic;
-}
-
-div.panel.subsection > div.panel-heading > a,
-div.panel.res-employer > div.panel-heading > a {
-	color: black;
 }
 
 div.panel > div.panel-heading > a {

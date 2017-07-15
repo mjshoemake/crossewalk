@@ -29,13 +29,13 @@ export class ReferralsService {
 	  		    description: "Mike's Director of Development at Amplify",
 	  		    showExcerpts: true,
             collapseClass: "panel-collapse in",
-		  	    excerpts: ["He grew quickly with his java background learning Groovy/Grails to " +
-                       "build the BMC from the ground up.",
-			                 "For the past year, Mike has been an Engineering Manager on key modules " +
+		  	    excerpts: ["\"He grew quickly with his java background learning Groovy/Grails to " +
+                       "build the BMC from the ground up.\"",
+			                 "\"For the past year, Mike has been an Engineering Manager on key modules " +
 			                 "in our Content Delivery tablet application. Mike has demonstrated his " +
                        "skills in handling demanding deadlines, complex functional requirements, " +
-			                 "and integrating with multiple teams working in an overlapping code base."],
-  	  		  referral: ["I have enjoyed working with Mike for 3 years here at Amplify. He joined " +
+			                 "and integrating with multiple teams working in an overlapping code base.\""],
+  	  		  referral: ["\"I have enjoyed working with Mike for 3 years here at Amplify. He joined " +
 	  	  	             "our team working on the Content Publishing and Book Management Console " +
 		  	               "projects. He grew quickly with his java background learning Groovy/Grails " +
                        "to build the BMC from the ground up. He created a rules engine that " +
@@ -50,7 +50,7 @@ export class ReferralsService {
                        "our Content Delivery tablet application. Mike has demonstrated his skills " +
                        "in handling demanding deadlines, complex functional requirements, and " +
                        "integrating with multiple teams working in an overlapping code base. I look " +
-                       "forward to the opportunity to work with Mike in the future."]
+                       "forward to the opportunity to work with Mike in the future.\""]
   		    }),
           new Referral({
 	  		    group: 'mgr',
@@ -87,13 +87,13 @@ export class ReferralsService {
 	  		    description: "Mike's Development Manager at Amplify",
 	  		    showExcerpts: true,
             collapseClass: "panel-collapse collapse",
-		  	    excerpts: ["He grew quickly with his java background learning Groovy/Grails to " +
-                       "build the BMC from the ground up.",
-			                 "For the past year, Mike has been an Engineering Manager on key modules " +
+		  	    excerpts: ["\"He grew quickly with his java background learning Groovy/Grails to " +
+                       "build the BMC from the ground up.\"",
+			                 "\"For the past year, Mike has been an Engineering Manager on key modules " +
 			                 "in our Content Delivery tablet application. Mike has demonstrated his " +
                        "skills in handling demanding deadlines, complex functional requirements, " +
-			                 "and integrating with multiple teams working in an overlapping code base."],
-  	  		  referral: ["I have enjoyed working with Mike for 3 years here at Amplify. He joined " +
+			                 "and integrating with multiple teams working in an overlapping code base.\""],
+  	  		  referral: ["\"I have enjoyed working with Mike for 3 years here at Amplify. He joined " +
 	  	  	             "our team working on the Content Publishing and Book Management Console " +
 		  	               "projects. He grew quickly with his java background learning Groovy/Grails " +
                        "to build the BMC from the ground up. He created a rules engine that " +
@@ -108,7 +108,7 @@ export class ReferralsService {
                        "our Content Delivery tablet application. Mike has demonstrated his skills " +
                        "in handling demanding deadlines, complex functional requirements, and " +
                        "integrating with multiple teams working in an overlapping code base. I look " +
-                       "forward to the opportunity to work with Mike in the future."]
+                       "forward to the opportunity to work with Mike in the future.\""]
   		    })
         ]
 		  }),

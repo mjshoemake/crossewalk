@@ -1,0 +1,14 @@
+{
+  "name": "crossewalk",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-include-source": "^1.1.0",
+    "jit-grunt": "^0.10.0"
+  }
+}

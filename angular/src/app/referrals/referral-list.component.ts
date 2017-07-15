@@ -12,7 +12,7 @@ import { CollapsiblePanelComponent } from '../shared/collapsible-panel.component
 @Component({
 	selector: 'referralList',
 	templateUrl: './referral-list.component.html',
-	styleUrls: []
+ 	styleUrls: []
 })
 
 @Injectable()
