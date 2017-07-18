@@ -1,0 +1,13 @@
+<!-- 2 groups: "Former Managers" and "Former Employees" -->
+
+<collapsiblePanel title="Downloads" id="downloads" collapseClass="collapse in">
+  <div *ngFor="let next of downloadItems" class="dis-inline-block right-margin-20px">
+    <a href="{{next.url}}" target="_new">
+      <div>
+        <img class="dis-block thumbnail-center-mobile" src="{{next.image}}" alt="{{next.name}}">
+        <span class="dis-block text-center">{{next.name}}</span>
+      </div>
+    </a>
+  </div>
+</collapsiblePanel>
+

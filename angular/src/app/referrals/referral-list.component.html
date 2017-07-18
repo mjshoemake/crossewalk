@@ -1,4 +1,5 @@
 <!-- 2 groups: "Former Managers" and "Former Employees" -->
+
 <collapsiblePanel *ngFor="let group of referrals; let i = index"
                   title="{{group.caption}}"
                   id="ref{{i+1}}"
@@ -6,7 +7,10 @@
   <ngb-accordion [closeOthers]="true" activeIds="pnl-{{i+1}}1" class="subsection">
     <ngb-panel *ngFor="let next of group.referrals; let j = index"
                id="pnl-{{i+1}}{{j+1}}"
-               title="{{next.author}}&nbsp;-&nbsp;{{next.description}}">
+               title="">
+      <ng-template ngbPanelTitle>
+        <b>{{next.author}}</b>&nbsp;-&nbsp;{{next.description}}
+      </ng-template>
       <ng-template ngbPanelContent>
         <div *ngIf="next.showExcerpts">
           <b>Excerpts:</b><br/>

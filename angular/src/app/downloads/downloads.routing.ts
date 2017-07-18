@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'
-import { ReferralListComponent } from './referral-list.component';
+import { DownloadsComponent } from './downloads.component';
 
 const routes: Routes = [
-  { path: 'referrals', component: ReferralListComponent } //,
+  { path: 'downloads', component: DownloadsComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ReferralsRoutingModule { }
+export class DownloadsRoutingModule { }
 
 export const routedComponents = [
-	ReferralListComponent
+	DownloadsComponent
 ];

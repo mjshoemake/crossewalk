@@ -21,22 +21,22 @@ export class NavItemService {
 		// Populate nav items list
 	  this.navItems = [
 	    new NavItem({
-			  href: '#',
+			  href: 'downloads',
   			glyphicon: 'glyphicon-folder-open',
 	  		displayText: 'Resume'
 		  }),
   	  new NavItem({
-	  		href: '#',
+	  		href: 'referrals',
 		  	glyphicon: 'glyphicon-pencil',
 			  displayText: 'Articles'
   		}),
 	    new NavItem({
-		  	href: '#',
+		  	href: '/downloads',
 			  glyphicon: 'glyphicon-download-alt',
 		  	displayText: 'Downloads'
 	  	}),
 	    new NavItem({
-		  	href: '#',
+		  	href: '/referrals',
 			  glyphicon: 'glyphicon-thumbs-up',
 		  	displayText: 'Referrals'
 	  	})
