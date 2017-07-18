@@ -13,6 +13,8 @@ export class CollapsibleSubPanelComponent {
 	@Input() pretitle: string = '';
 	@Input() boldtitle: string = '';
 	@Input() posttitle: string = '';
+	@Input() title: string = '';
+	@Input() panelClass: string = '';
 	@Input() collapseClass: string = 'panel-collapse collapse';
 	@Input() id: string = '1';
 	@Input() dataParent: string = '';

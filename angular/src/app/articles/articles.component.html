@@ -1,0 +1,58 @@
+<titledPanel title="Articles">
+
+  <!-- Collapsible Subpanel for each referral -->
+  <collapsibleSubPanel *ngFor="let next of articles; let i = index"
+                       title="{{next.title}}"
+                       id="article{{i+1}}"
+                       collapseClass="{{next.collapseClass}}"
+                       panelClass="flex-row-nowrap">
+
+<!--
+  <collapsibleSubPanel *ngFor="let next of group.referrals; let j = index"
+                       boldtitle="{{next.author}}"
+                       posttitle="&nbsp;-&nbsp;{{next.description}}"
+                       id="ref{{i+1}}{{j+1}}"
+                       collapseClass="{{next.collapseClass}}"
+                       (click)="showReferralByAuthor($event)"
+                       dataParent="accordion{{i+1}}">
+-->
+
+
+          <div class="left right-margin-20px" style="width: 140px;">
+            <a class="thumbnail-center-mobile" href="{{next.url}}" target="_new">
+              <img class="thumbnail-center-mobile" src="{{next.image}}" alt="" alt-text=""/>
+            </a>
+          </div>
+          <div class="right flex-grow">
+            <p>
+              Is your software development organization performing as it should?  Wherever you are on the
+              continuum, it's important to identify where you need to go and how to get there, because organizations
+              need a clear vision to help everyone drive in the same direction. We should evaluate our processes,
+              technology, product line, documentation, culture, and our people themselves. But, what do we evaluate
+              them against? How do we measure our progress? I believe there are three key measuring sticks for evaluating
+              a team or organization, and if we keep these things in focus productivity will skyrocket.
+            </p>
+            <div>
+              <ul>
+                <li>Quality</li>
+                <li>Efficiency</li>
+                <li>Balance</li>
+              </ul>
+              Let's look closely at each one.
+            </div>
+            <p>
+              <a href="{{next.url}}" target="_new">
+                [READ MORE]
+              </a>
+              <br/>
+              <b>
+                <a href="{{next.host}}" target="_new">
+                  {{next.hostname}}
+                </a>
+              </b>
+            </p>
+          </div>
+
+  </collapsibleSubPanel>
+</titledPanel>
+
