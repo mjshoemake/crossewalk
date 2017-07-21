@@ -135,19 +135,16 @@ export class ReferralsService {
 	  		    description: "Web UI Developer on Mike's Team at Amplify",
 	  		    showExcerpts: true,
             collapseClass: "panel-collapse collapse",
-		  	    excerpts: ["He grew quickly with his java background learning Groovy/Grails to " +
-                       "build the BMC from the ground up.",
-			                 "For the past year, Mike has been an Engineering Manager on key modules " +
-			                 "in our Content Delivery tablet application. Mike has demonstrated his " +
-                       "skills in handling demanding deadlines, complex functional requirements, " +
-			                 "and integrating with multiple teams working in an overlapping code base."],
-  	  		  referral: ["",
-  	  		             "",
-  	  		             "",
-  	  		             "",
-  	  		             "",
-  	  		             "",
-  	  		             ""]
+		  	    excerpts: ["\"Mike has been the best dev manager I have worked for.\"",
+			                 "\"He really looks after his team to help them grow and give them opportunities to improve themselves in their " +
+                       "career path. On a personal level he is very easy going and fun to talk to.\""],
+  	  		  referral: ["\"Mike has been the best dev manager I have worked for. He is always upfront and open about everything " +
+                       "going on in the company and the team. He really looks after his team to help them grow and give them " +
+                       "opportunities to improve themselves in their career path. On a personal level he is very easy going and " +
+                       "fun to talk to. There is never a dull moment when we are in the office together. It is really hard to find " +
+                       "a person you can get along with on a personal and business level who is really looking out for your well-being. " +
+                       "I am extremely grateful to have had the opportunity to work with Mike and without a doubt I would gladly work " +
+                       "with him again and I hope I do.\""]
   		    }),
           new Referral({
 	  		    group: 'emp',
@@ -155,19 +152,16 @@ export class ReferralsService {
 	  		    description: "Web UI Developer on Mike's Team at Amplify",
 	  		    showExcerpts: true,
             collapseClass: "panel-collapse collapse",
-		  	    excerpts: ["He grew quickly with his java background learning Groovy/Grails to " +
-                       "build the BMC from the ground up.",
-			                 "For the past year, Mike has been an Engineering Manager on key modules " +
-			                 "in our Content Delivery tablet application. Mike has demonstrated his " +
-                       "skills in handling demanding deadlines, complex functional requirements, " +
-			                 "and integrating with multiple teams working in an overlapping code base."],
-  	  		  referral: ["",
-  	  		             "",
-  	  		             "",
-  	  		             "",
-  	  		             "",
-  	  		             "",
-  	  		             ""]
+		  	    excerpts: ["\"Mike led the team during a high-stress time: product needs were constantly shifting and Mike used his skills as manager " +
+                       "and agile process expert to keep the team moving to worthwhile goals. In addition to these skills, Mike was able to contribute " +
+                       "to the team as a software developer as well, and was instrumental in shaping the new microservices the team was producing.\""],
+  	  		  referral: ["\"During my contract with Amplify, Mike served as team lead and oversaw the development of all software related to " +
+                       "in-classroom education and testing. Classwork was a crucial part of the Amplify application, and only seasoned " +
+                       "professionals were involved in the management and creation of these pieces. Mike led the team during a high-stress " +
+                       "time: product needs were constantly shifting and Mike used his skills as manager and agile process expert to keep " +
+                       "the team moving to worthwhile goals. In addition to these skills, Mike was able to contribute to the team as a software " +
+                       "developer as well, and was instrumental in shaping the new microservices the team was producing. I welcome the " +
+                       "opportunity to work with Mike in future engagements.\""]
   		    })
         ]
 		  })
