@@ -221,14 +221,9 @@ div.feature-title {
 	src: url("../fonts/HelveticaNeueBd.ttf");
 }
 
-div.navbar-header {
-	margin-left: 20px;
-	margin-top: 5px;
-}
-
 .header {
-	background-color: @color-primary-0;
-    box-shadow: 2px 1px 1px #333333;
+	//background-color: @color-primary-0;
+    //box-shadow: 2px 1px 1px #333333;
 }
 
 img.app-icon {
@@ -324,9 +319,18 @@ p.jumbotron {
     border-color: @selected-bg-color;
 }
 
-
+div.transparent {
+    background-color: transparent;
+}
 
 // NavBar
+div.navbar-header {
+	padding-left: 20px;
+	padding-top: 5px;
+	background-color: #dddddd;
+    box-shadow: 2px 1px 1px #333333;
+}
+
 nav.navbar {
 	background: inherit;
 	margin-bottom: 0;
@@ -371,6 +375,16 @@ nav.navbar-default ul.navbar-nav>li.active>a:focus {
 nav.navbar-default button.navbar-toggle span.icon-bar {
 	background-color: #aaaaaa;
 	box-shadow: 0px 1px 1px #888888;
+}
+
+div.navbar-collapse {
+}
+
+div.nav-dropdown {
+    position: absolute;
+    right: 0;
+    box-shadow: 2px 1px 1px #333333;
+    background-color: #dddddd;
 }
 
 li.nav {
@@ -657,9 +671,11 @@ a.top-btn:hover, a.top-btn:focus {
 		//margin: 0 20px 0 20px;
 	}
 	
-	div.navbar-collapse.in {
+	div.navbar-collapse {
 		//background-color: @color-primary-2;
-		padding-bottom: 10px;
+		//padding-bottom: 10px;
+    	background-color: transparent !important;
+	    border: none;
 	}
 	
 	li.nav {

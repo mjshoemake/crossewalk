@@ -21,11 +21,15 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse collapse" id="div-navbar-collapsible">
-          <ul class="nav navbar-nav navbar-right">
-            <li *ngFor="let navitem of navItems" class="nav">
-              <a routerLink="{{navitem.href}}" routerLinkActive="active"><span class="glyphicon {{navitem.glyphicon}}"></span>&nbsp;&nbsp;{{navitem.displayText}}</a>
-            </li>
-          </ul>
+          <div class="left transparent">
+          </div>
+          <div class="right nav-dropdown">
+            <ul class="nav navbar-nav navbar-right">
+              <li *ngFor="let navitem of navItems" class="nav">
+                <a routerLink="{{navitem.href}}" routerLinkActive="active"><span class="glyphicon {{navitem.glyphicon}}"></span>&nbsp;&nbsp;{{navitem.displayText}}</a>
+              </li>
+            </ul>
+          </div>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
