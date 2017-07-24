@@ -24,23 +24,10 @@
             </a>
           </div>
           <div class="right flex-grow">
-            <p>
-              Is your software development organization performing as it should?  Wherever you are on the
-              continuum, it's important to identify where you need to go and how to get there, because organizations
-              need a clear vision to help everyone drive in the same direction. We should evaluate our processes,
-              technology, product line, documentation, culture, and our people themselves. But, what do we evaluate
-              them against? How do we measure our progress? I believe there are three key measuring sticks for evaluating
-              a team or organization, and if we keep these things in focus productivity will skyrocket.
-            </p>
-            <div>
-              <ul>
-                <li>Quality</li>
-                <li>Efficiency</li>
-                <li>Balance</li>
-              </ul>
-              Let's look closely at each one.
+            <div [innerHTML]="next.content">
+
             </div>
-            <p>
+            <div>
               <a href="{{next.url}}" target="_new">
                 [READ MORE]
               </a>
@@ -50,7 +37,7 @@
                   {{next.hostname}}
                 </a>
               </b>
-            </p>
+            </div>
           </div>
 
   </collapsibleSubPanel>

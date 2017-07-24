@@ -28,6 +28,7 @@ export class DownloadsComponent  {
 		this.downloadsService = _downloadsService;
 
 		// Set up page data.
+    _pageComp.closeHamburgerMenu();
 		_pageComp.pageName = 'Downloads';
 		_pageComp.subTitle = 'Latest resumes and other documents in MS Word format.';
 		this.downloadItems = this.downloadsService.getAll();

@@ -28,6 +28,7 @@ export class ResumeComponent  {
 		this.resumeService = _resumeService;
 
 		// Set up page data.
+    _pageComp.closeHamburgerMenu();
 		_pageComp.pageName = 'Resume';
 		_pageComp.subTitle = 'I am a leader and mentor who is skilled in building high performing software development teams. I cast a clear vision for the team, focusing on efficiency, teamwork, collaboration, and growing technical knowledge. I am also a developer who has built quality web applications for over 20 years.';
 		this.resume = this.resumeService.getResume();

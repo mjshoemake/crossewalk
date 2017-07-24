@@ -30,4 +30,18 @@ export class HeaderComponent  {
 		this.log.info('HeaderComponent.constructor()    NavItem count=' + this.navItems.length);
 	}
 
+	closeHamburgerMenu() {
+	  let button = document.getElementById('hamburgerButton');
+	  let collapsible = document.getElementById('div-navbar-collapsible');
+	  this.log.info('Collapsing menu after page change...');
+	  if (button) {
+	    button.className='navbar-toggle collapsed';
+	    this.log.info('   HamburgerButton.class==' + button.className);
+	  }
+	  if (collapsible) {
+	    collapsible.className='navbar-collapse collapse';
+	    this.log.info('   CollapsibleDiv.class==' + button.className);
+	  }
+	}
+
 }

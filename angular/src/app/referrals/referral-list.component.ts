@@ -29,6 +29,7 @@ export class ReferralListComponent  {
 		this.referralsService = _referralsService;
 
 		// Set up page data.
+    _pageComp.closeHamburgerMenu();
 		_pageComp.pageName = 'Referrals';
 		_pageComp.subTitle = 'Referrals for Mike Shoemake written by former colleagues.';
 		this.referrals = this.referralsService.getAll();

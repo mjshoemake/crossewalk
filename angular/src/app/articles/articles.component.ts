@@ -27,6 +27,7 @@ export class ArticlesComponent  {
 		this.articlesService = _articlesService;
 
 		// Set up page data.
+    _pageComp.closeHamburgerMenu();
 		_pageComp.pageName = 'Articles';
 		_pageComp.subTitle = 'Articles written by Mike Shoemake';
 		this.articles = this.articlesService.getAll();

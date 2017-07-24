@@ -5,10 +5,12 @@ import { LogService } from './log.service';
 import { BrandIcon } from './brand-icon';
 import { NavItem } from './nav-item';
 import { NavItemService } from './nav-item.service';
+import { HeaderComponent } from './header.component';
 
 @Component({
 	selector: 'page',
 	templateUrl: './page.component.html',
+	providers: [HeaderComponent],
 	styleUrls: []
 })
 
@@ -31,6 +33,7 @@ export class PageComponent  {
 
 	navItems: NavItem[] = []
 	navItemService: NavItemService;
+	headerComp: HeaderComponent;
 
 	// Messages
 	//alertMsg: string = 'Danger, Will Robinson!!  Danger!!';
@@ -39,7 +42,9 @@ export class PageComponent  {
 
 	log: LogService;
 
-	constructor(private _logger: LogService, private _navItemService: NavItemService) {
+	constructor(private _logger: LogService,
+	            private _navItemService: NavItemService,
+	            private _headerComp: HeaderComponent) {
     // Arguments
 		this.log = _logger;
 		this.navItemService = _navItemService;
@@ -48,6 +53,12 @@ export class PageComponent  {
 		this.log.info('PageComponent.constructor() BEGIN');
     this.navItems = this.navItemService.getAll();
 		this.log.info('PageComponent.constructor()    NavItem count=' + this.navItems.length);
+		this.headerComp = _headerComp;
 	}
+
+	closeHamburgerMenu() {
+	  this.headerComp.closeHamburgerMenu();
+	}
+
 
 }
