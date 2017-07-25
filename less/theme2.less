@@ -668,8 +668,11 @@ a.top-btn:hover, a.top-btn:focus {
 
 @media only screen and (max-width: 767px) { 
 	ul.nav.navbar-right {
-		width: 120px;
-		//margin: 0 20px 0 20px;
+		width: 200px;
+		background-color: #dddddd;
+        float: right;
+        margin: 0;
+        margin: 0px -14px 0 0;
 	}
 	
     .header {
@@ -690,6 +693,18 @@ a.top-btn:hover, a.top-btn:focus {
 	
     nav.nav-dropdown-spacer {
         display: inline-block;
+        width: 50%;
+        background-color: transparent;
+    }
+
+    div.nav-dropdown {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        box-shadow: 0px 1px 1px #333333;
+        background-color: #dddddd;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     div.navbar-header {
@@ -701,17 +716,9 @@ a.top-btn:hover, a.top-btn:focus {
         box-shadow: 0px 0px 2px #333333;
     }
 
-    div.nav-dropdown {
-        position: absolute;
-        right: 0;
-        box-shadow: 0px 1px 1px #333333;
-        background-color: #dddddd;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
 	li.nav {
 		padding: 5px 0 5px 0;
+		text-align: center;
 	}
 }
 
