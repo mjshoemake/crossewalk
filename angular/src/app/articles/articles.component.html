@@ -1,0 +1,45 @@
+<titledPanel title="Articles">
+
+  <!-- Collapsible Subpanel for each referral -->
+  <collapsibleSubPanel *ngFor="let next of articles; let i = index"
+                       title="{{next.title}}"
+                       id="article{{i+1}}"
+                       collapseClass="{{next.collapseClass}}"
+                       panelClass="flex-row-nowrap">
+
+<!--
+  <collapsibleSubPanel *ngFor="let next of group.referrals; let j = index"
+                       boldtitle="{{next.author}}"
+                       posttitle="&nbsp;-&nbsp;{{next.description}}"
+                       id="ref{{i+1}}{{j+1}}"
+                       collapseClass="{{next.collapseClass}}"
+                       (click)="showReferralByAuthor($event)"
+                       dataParent="accordion{{i+1}}">
+-->
+
+
+          <div class="left right-margin-20px" style="width: 140px;">
+            <a class="thumbnail-center-mobile" href="{{next.url}}" target="_new">
+              <img class="thumbnail-center-mobile" src="{{next.image}}" alt="" alt-text=""/>
+            </a>
+          </div>
+          <div class="right flex-grow">
+            <div [innerHTML]="next.content">
+
+            </div>
+            <div>
+              <a href="{{next.url}}" target="_new">
+                [READ MORE]
+              </a>
+              <br/>
+              <b>
+                <a href="{{next.host}}" target="_new">
+                  {{next.hostname}}
+                </a>
+              </b>
+            </div>
+          </div>
+
+  </collapsibleSubPanel>
+</titledPanel>
+
