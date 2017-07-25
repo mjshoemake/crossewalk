@@ -1,0 +1,20 @@
+
+			<header class="feature">
+				<div class="container container-fluid feature-title">
+					<h2 class="feature-title__title headroom-title">{{pageName}}</h2>
+					<p class="feature-title__subtitle">{{pageDescription}}</p>
+				</div>
+			</header>
+
+			<div class="container-fluid">
+				<titled-panel title="Downloads">
+					<div ng-repeat="item in downloadsList" class="dis-inline-block right-margin-20px">
+						<a href="{{item.docUrl}}" target="_new">
+							<div>
+								<img class="dis-block thumbnail-center-mobile" ng-src="{{item.imageUrl}}" alt="{{item.name}}" alt-text="{{item.name}}">
+								<span class="dis-block text-center">{{item.name}}</span>
+							</div>
+						</a>
+					</div>
+				</titled-panel>
+			</div>

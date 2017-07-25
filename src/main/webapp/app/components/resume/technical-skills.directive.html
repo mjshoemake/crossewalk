@@ -1,0 +1,24 @@
+<div class="panel panel-primary section width-fill">
+    <div class="panel-heading">
+        <a class="accordion-toggle" target="_self" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{id}}">
+            {{title}}
+        </a>
+    </div>
+    <div id="collapse-{{id}}" class="panel-collapse {{collapseclass}}">
+        <div class="panel-body">
+            <div ng-repeat="skillList in skills track by $index" ng-class="{left: $index == 0, right: $index == 1}">  <!-- class="left/right" -->
+                <ul style="margin-bottom: 0;">
+                    <li ng-repeat="skill in skillList">
+                        {{skill}}
+                    </li>
+                </ul>
+            </div>
+            <div class="dis-block">
+                <br/>
+                NOTE: This site was built with AngularJS, Bootstrap, JavaScript, CSS, and HTML5. To see the Angular 2 version, please
+                <a class="hyperlink" href="index.html" target="_self">click here</a>.
+            </div>
+
+        </div>
+    </div>
+</div>
