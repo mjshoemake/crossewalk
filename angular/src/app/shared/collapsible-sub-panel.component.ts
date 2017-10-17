@@ -15,7 +15,7 @@ export class CollapsibleSubPanelComponent {
 	@Input() posttitle: string = '';
 	@Input() title: string = '';
 	@Input() panelClass: string = '';
-	@Input() collapseClass: string = 'panel-collapse collapse';
+	@Input() collapseClass: string = 'panel-collapse in';
 	@Input() id: string = '1';
 	@Input() dataParent: string = '';
   @Output() click: EventEmitter<String> = new EventEmitter<String>();

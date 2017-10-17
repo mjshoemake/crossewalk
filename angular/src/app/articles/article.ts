@@ -5,6 +5,7 @@ export class Article {
 	image: string = '';
 	host: string = '';
 	hostname: string = '';
+	collapseClass: string= '';
 
 	constructor(values: Object = {}) {
 		Object.assign(this, values);
