@@ -51,3 +51,6 @@ angular/dist/assets/js/slidingHeader.js
 temp/node/node
 temp/node/npm
 temp/node/npm.cmd
+.idea/
+target/
+temp/
