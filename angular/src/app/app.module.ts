@@ -11,6 +11,8 @@ import { ResumeModule } from './resume/resume.module';
 import { SharedModule } from './shared/shared.module';
 import {Logger, Options as LoggerOptions} from 'angular2-logger/app/core/logger';
 import { environment } from '../environments/environment';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { routing } from './app.routes';
 
 // Declarations
 import { AppComponent } from './app.component';
@@ -20,8 +22,6 @@ import { FooterComponent } from './footer.component';
 import { PageComponent } from './page.component';
 import { LogService } from './log.service';
 import { NavItemService } from './nav-item.service';
-import { routing } from './app.routes';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Decorator
 @NgModule({
